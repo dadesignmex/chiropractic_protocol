@@ -1,0 +1,14 @@
+variable_name,description,type,values,derivation
+patient_id,Unique anonymised patient identifier,string,"P001, P002, ...",Assigned sequentially after de-identification
+age,Age at first consult (years),integer,18–90,"Calculated as Year of First Consult - Year of Birth, adjusted for birthday"
+condition,MRI-confirmed lumbar disc pathology,categorical,DDD / DiscHerniation / Stenosis / Mixed,Clinician-coded from imaging report and complaint
+vas_pre,Pre-treatment VAS pain score,integer,0–10,Direct from VAS PRE field in raw data
+vas_post,Post-treatment VAS pain score,integer,0–10,Direct from VAS POST field in raw data
+maxpain_pre,Worst pain level across all six movement planes pre-treatment,ordinal,None / Mild / Moderate / Severe,Maximum severity among FLEXION_PAIN_LEVEL_PRE through LEFT_ROTATION_PAIN_LEVEL_PRE
+maxpain_post,Worst pain level across all six movement planes post-treatment,ordinal,None / Mild / Moderate / Severe,Maximum severity among FLEXION_PAIN_LEVEL_POST through LEFT_ROTATION_PAIN_LEVEL_POST
+maxlimit_pre,Worst motion limitation across all six planes pre-treatment,ordinal,WNL / Mild / Moderate / Severe / FUL,Maximum limitation among FLEXION_MOTION_LIMIT_PRE through LEFT_ROTATION_MOTION_LIMIT_PRE
+maxlimit_post,Worst motion limitation across all six planes post-treatment,ordinal,WNL / Mild / Moderate / Severe / FUL,Maximum limitation among FLEXION_MOTION_LIMIT_POST through LEFT_ROTATION_MOTION_LIMIT_POST
+neuro_def_pre,Presence of any neurological deficit pre-treatment,binary,0 (No) / 1 (Yes),"1 if ANY sensory field abnormal, OR any motor grade <5 or '-', OR any reflex grade <2 or >2 in PRE columns"
+neuro_def_post,Presence of any neurological deficit post-treatment,binary,0 (No) / 1 (Yes),Same logic applied to POST columns
+surgical_candidate,Proxy surgical candidacy at baseline,binary,0 (No) / 1 (Yes),1 if vas_pre >= 7 OR neuro_def_pre == 1
+success,Composite successful outcome,binary,0 (No) / 1 (Yes),1 if (vas_pre - vas_post) / vas_pre >= 0.5 AND neuro_def_post == 0

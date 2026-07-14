@@ -1,0 +1,211 @@
+[2026-07-13 18:29:00] [00_import_raw] PRE columns: ['', 'Patient ID#', 'Sex', 'D.O.B Dd/Mm/YYyy', 'Complaint', 'VAS PRE', 'FLEXION MOTION LIMIT PRE', 'FLEXION PAIN LEVEL PRE', 'EXTENSION MOTION LIMIT PRE', 'EXTENSION PAIN LEVEL PRE', 'RIGHT LATERAL FLEXION MOTION LIMIT PRE', 'RIGHT LATERAL FLEXION PAIN LEVEL PRE', 'LEFT LATERAL FLEXION MOTION LIMIT PRE', 'LEFT LATERAL FLEXION PAIN LEVEL PRE', 'RIGHT ROTATION MOTION LIMIT PRE', 'RIGHT ROTATION PAIN LEVEL PRE', 'LEFT ROTATION MOTION LIMIT PRE', 'LEFT ROTATION PAIN LEVEL PRE', 'LEFT KEMPS', 'RIGHT KEMPS', "FABER Patrick's TEST LEFT", "FABER Patrick's TEST RIGHT", 'Passive SLR LEFT', 'Passive SLR RIGHT', 'SLR DEGREES LEFT', 'SLR DEGREES RIGHT', 'SENSORY LEFT L4 PRE', 'SENSORY RIGHT L4 PRE', 'SENSORY LEFT L5 PRE', 'SENSORY RIGHT L5 PRE', 'SENSORY LEFT S1 PRE', 'SENSORY RIGHT S1 PRE', 'MOTOR LEFT L1-3 PRE', 'MOTOR RIGHT L1-3 PRE', 'MOTOR LEFT L4 PRE', 'MOTOR RIGHT L4 PRE', 'MOTOR LEFT L5 PRE', 'MOTOR RIGHT  L5 PRE', 'MOTOR LEFT S1 PRE', 'MOTOR RIGHT S1 PRE', 'DTR LEFT L4 PRE', 'DTR RIGHT L4 PRE', 'DTR LEFT S1 PRE', 'DTR RIGHT S1 PRE']
+[2026-07-13 18:29:00] [00_import_raw] POST columns: ['', 'Patient ID#', 'Sex', 'D.O.B Dd/Mm/YYyy', 'Complaint', 'VAS POST', 'FLEXION MOTION LIMIT POST', 'FLEXION PAIN LEVEL POST', 'EXTENSION MOTION LIMIT POST', 'EXTENSION PAIN LEVEL POST', 'RIGHT LATERAL FLEXION MOTION LIMIT POST', 'RIGHT LATERAL FLEXION PAIN LEVEL POST', 'LEFT LATERAL FLEXION MOTION LIMIT POST', 'LEFT LATERAL FLEXION PAIN LEVEL POST', 'RIGHT ROTATION MOTION LIMIT POST', 'RIGHT ROTATION PAIN LEVEL POST', 'LEFT ROTATION MOTION LIMIT POST', 'LEFT ROTATION MOTION LIMIT POST', 'LEFT KEMPS', 'RIGHT KEMPS', "FABER Patrick's TEST LEFT", "FABER Patrick's TEST RIGHT", 'Passive SLR LEFT', 'Passive SLR RIGHT', 'SLR DEGREES LEFT', 'SLR DEGREES RIGHT', 'SENSORY LEFT L4 PRE', 'SENSORY RIGHT L4 POST', 'SENSORY LEFT L5 POST', 'SENSORY RIGHT L5 POST', 'SENSORY LEFT S1 POST', 'SENSORY RIGHT S1 POST', 'MOTOR LEFT L1-3 POST', 'MOTOR RIGHT L1-3 POST', 'MOTOR LEFT L4 POST', 'MOTOR RIGHT L4 POST', 'MOTOR LEFT L5 POST', 'MOTOR RIGHT  L5 POST', 'MOTOR LEFT S1 POST', 'MOTOR RIGHT S1 POST', 'DTR LEFT L4 POST', 'DTR RIGHT L4 POST', 'DTR LEFT S1 POST', 'DTR RIGHT S1 POST']
+[2026-07-13 18:29:00] [00_import_raw] Merged data shape: (34, 87)
+[2026-07-13 18:29:00] [00_import_raw] Merged columns (87):
+[2026-07-13 18:29:00] [00_import_raw]   _PRE
+[2026-07-13 18:29:00] [00_import_raw]   Patient ID#
+[2026-07-13 18:29:00] [00_import_raw]   Sex_PRE
+[2026-07-13 18:29:00] [00_import_raw]   D.O.B Dd/Mm/YYyy_PRE
+[2026-07-13 18:29:00] [00_import_raw]   Complaint_PRE
+[2026-07-13 18:29:00] [00_import_raw]   VAS PRE
+[2026-07-13 18:29:00] [00_import_raw]   FLEXION MOTION LIMIT PRE
+[2026-07-13 18:29:00] [00_import_raw]   FLEXION PAIN LEVEL PRE
+[2026-07-13 18:29:00] [00_import_raw]   EXTENSION MOTION LIMIT PRE
+[2026-07-13 18:29:00] [00_import_raw]   EXTENSION PAIN LEVEL PRE
+[2026-07-13 18:29:00] [00_import_raw]   RIGHT LATERAL FLEXION MOTION LIMIT PRE
+[2026-07-13 18:29:00] [00_import_raw]   RIGHT LATERAL FLEXION PAIN LEVEL PRE
+[2026-07-13 18:29:00] [00_import_raw]   LEFT LATERAL FLEXION MOTION LIMIT PRE
+[2026-07-13 18:29:00] [00_import_raw]   LEFT LATERAL FLEXION PAIN LEVEL PRE
+[2026-07-13 18:29:00] [00_import_raw]   RIGHT ROTATION MOTION LIMIT PRE
+[2026-07-13 18:29:00] [00_import_raw]   RIGHT ROTATION PAIN LEVEL PRE
+[2026-07-13 18:29:00] [00_import_raw]   LEFT ROTATION MOTION LIMIT PRE
+[2026-07-13 18:29:00] [00_import_raw]   LEFT ROTATION PAIN LEVEL PRE
+[2026-07-13 18:29:00] [00_import_raw]   LEFT KEMPS_PRE
+[2026-07-13 18:29:00] [00_import_raw]   RIGHT KEMPS_PRE
+[2026-07-13 18:29:00] [00_import_raw]   FABER Patrick's TEST LEFT_PRE
+[2026-07-13 18:29:00] [00_import_raw]   FABER Patrick's TEST RIGHT_PRE
+[2026-07-13 18:29:00] [00_import_raw]   Passive SLR LEFT_PRE
+[2026-07-13 18:29:00] [00_import_raw]   Passive SLR RIGHT_PRE
+[2026-07-13 18:29:00] [00_import_raw]   SLR DEGREES LEFT_PRE
+[2026-07-13 18:29:00] [00_import_raw]   SLR DEGREES RIGHT_PRE
+[2026-07-13 18:29:00] [00_import_raw]   SENSORY LEFT L4 PRE
+[2026-07-13 18:29:00] [00_import_raw]   SENSORY RIGHT L4 PRE
+[2026-07-13 18:29:00] [00_import_raw]   SENSORY LEFT L5 PRE
+[2026-07-13 18:29:00] [00_import_raw]   SENSORY RIGHT L5 PRE
+[2026-07-13 18:29:00] [00_import_raw]   SENSORY LEFT S1 PRE
+[2026-07-13 18:29:00] [00_import_raw]   SENSORY RIGHT S1 PRE
+[2026-07-13 18:29:00] [00_import_raw]   MOTOR LEFT L1-3 PRE
+[2026-07-13 18:29:00] [00_import_raw]   MOTOR RIGHT L1-3 PRE
+[2026-07-13 18:29:00] [00_import_raw]   MOTOR LEFT L4 PRE
+[2026-07-13 18:29:00] [00_import_raw]   MOTOR RIGHT L4 PRE
+[2026-07-13 18:29:00] [00_import_raw]   MOTOR LEFT L5 PRE
+[2026-07-13 18:29:00] [00_import_raw]   MOTOR RIGHT  L5 PRE
+[2026-07-13 18:29:00] [00_import_raw]   MOTOR LEFT S1 PRE
+[2026-07-13 18:29:00] [00_import_raw]   MOTOR RIGHT S1 PRE
+[2026-07-13 18:29:00] [00_import_raw]   DTR LEFT L4 PRE
+[2026-07-13 18:29:00] [00_import_raw]   DTR RIGHT L4 PRE
+[2026-07-13 18:29:00] [00_import_raw]   DTR LEFT S1 PRE
+[2026-07-13 18:29:00] [00_import_raw]   DTR RIGHT S1 PRE
+[2026-07-13 18:29:00] [00_import_raw]   _POST
+[2026-07-13 18:29:00] [00_import_raw]   Sex_POST
+[2026-07-13 18:29:00] [00_import_raw]   D.O.B Dd/Mm/YYyy_POST
+[2026-07-13 18:29:00] [00_import_raw]   Complaint_POST
+[2026-07-13 18:29:00] [00_import_raw]   VAS POST
+[2026-07-13 18:29:00] [00_import_raw]   FLEXION MOTION LIMIT POST
+[2026-07-13 18:29:00] [00_import_raw]   FLEXION PAIN LEVEL POST
+[2026-07-13 18:29:00] [00_import_raw]   EXTENSION MOTION LIMIT POST
+[2026-07-13 18:29:00] [00_import_raw]   EXTENSION PAIN LEVEL POST
+[2026-07-13 18:29:00] [00_import_raw]   RIGHT LATERAL FLEXION MOTION LIMIT POST
+[2026-07-13 18:29:00] [00_import_raw]   RIGHT LATERAL FLEXION PAIN LEVEL POST
+[2026-07-13 18:29:00] [00_import_raw]   LEFT LATERAL FLEXION MOTION LIMIT POST
+[2026-07-13 18:29:00] [00_import_raw]   LEFT LATERAL FLEXION PAIN LEVEL POST
+[2026-07-13 18:29:00] [00_import_raw]   RIGHT ROTATION MOTION LIMIT POST
+[2026-07-13 18:29:00] [00_import_raw]   RIGHT ROTATION PAIN LEVEL POST
+[2026-07-13 18:29:00] [00_import_raw]   LEFT ROTATION MOTION LIMIT POST
+[2026-07-13 18:29:00] [00_import_raw]   LEFT ROTATION PAIN LEVEL POST
+[2026-07-13 18:29:00] [00_import_raw]   LEFT KEMPS_POST
+[2026-07-13 18:29:00] [00_import_raw]   RIGHT KEMPS_POST
+[2026-07-13 18:29:00] [00_import_raw]   FABER Patrick's TEST LEFT_POST
+[2026-07-13 18:29:00] [00_import_raw]   FABER Patrick's TEST RIGHT_POST
+[2026-07-13 18:29:00] [00_import_raw]   Passive SLR LEFT_POST
+[2026-07-13 18:29:00] [00_import_raw]   Passive SLR RIGHT_POST
+[2026-07-13 18:29:00] [00_import_raw]   SLR DEGREES LEFT_POST
+[2026-07-13 18:29:00] [00_import_raw]   SLR DEGREES RIGHT_POST
+[2026-07-13 18:29:00] [00_import_raw]   SENSORY LEFT L4 POST
+[2026-07-13 18:29:00] [00_import_raw]   SENSORY RIGHT L4 POST
+[2026-07-13 18:29:00] [00_import_raw]   SENSORY LEFT L5 POST
+[2026-07-13 18:29:00] [00_import_raw]   SENSORY RIGHT L5 POST
+[2026-07-13 18:29:00] [00_import_raw]   SENSORY LEFT S1 POST
+[2026-07-13 18:29:00] [00_import_raw]   SENSORY RIGHT S1 POST
+[2026-07-13 18:29:00] [00_import_raw]   MOTOR LEFT L1-3 POST
+[2026-07-13 18:29:00] [00_import_raw]   MOTOR RIGHT L1-3 POST
+[2026-07-13 18:29:00] [00_import_raw]   MOTOR LEFT L4 POST
+[2026-07-13 18:29:00] [00_import_raw]   MOTOR RIGHT L4 POST
+[2026-07-13 18:29:00] [00_import_raw]   MOTOR LEFT L5 POST
+[2026-07-13 18:29:00] [00_import_raw]   MOTOR RIGHT  L5 POST
+[2026-07-13 18:29:00] [00_import_raw]   MOTOR LEFT S1 POST
+[2026-07-13 18:29:00] [00_import_raw]   MOTOR RIGHT S1 POST
+[2026-07-13 18:29:00] [00_import_raw]   DTR LEFT L4 POST
+[2026-07-13 18:29:00] [00_import_raw]   DTR RIGHT L4 POST
+[2026-07-13 18:29:00] [00_import_raw]   DTR LEFT S1 POST
+[2026-07-13 18:29:00] [00_import_raw]   DTR RIGHT S1 POST
+[2026-07-13 18:29:00] [00_import_raw] 
+Raw merged data saved to ../data/raw_merged.csv with 34 patients.
+[2026-07-13 18:29:01] [01_preprocess] VAS PRE missing before fill: 6
+[2026-07-13 18:29:01] [01_preprocess] VAS POST missing before fill: 10
+[2026-07-13 18:29:01] [01_preprocess] VAS PRE missing after fill: 0
+[2026-07-13 18:29:01] [01_preprocess] VAS POST missing after fill: 0
+[2026-07-13 18:29:01] [01_preprocess] VAS PRE missing after conversion: 0
+[2026-07-13 18:29:01] [01_preprocess] VAS POST missing after conversion: 0
+[2026-07-13 18:29:01] [01_preprocess] clinical_data.csv saved with 34 patients and 65 columns.
+[2026-07-13 18:29:01] [01_preprocess] 
+Derived variables summary:
+[2026-07-13 18:29:01] [01_preprocess]   maxpain_pre:  {'MILD': 10, 'MOD': 5, 'NONE': 4, 'SEVERE': 3}
+[2026-07-13 18:29:01] [01_preprocess]   maxpain_post: {'NONE': 10, 'MILD': 9, 'MOD': 2, 'SEVERE': 1}
+[2026-07-13 18:29:01] [01_preprocess]   neuro_def_pre:  {1: 21, 0: 13}
+[2026-07-13 18:29:01] [01_preprocess]   neuro_def_post: {1: 19, 0: 15}
+[2026-07-13 18:29:01] [01_preprocess]   surgical_candidate: {1: 31, 0: 3}
+[2026-07-13 18:29:01] [01_preprocess]   success: {0: 22, 1: 12}
+[2026-07-13 18:29:01] [02_descriptive_stats] === DEMOGRAPHICS ===
+[2026-07-13 18:29:01] [02_descriptive_stats] Total patients: 34
+[2026-07-13 18:29:01] [02_descriptive_stats] Age: mean=59.6, SD=17.3, range=19-86
+[2026-07-13 18:29:01] [02_descriptive_stats] 
+=== CONDITION DISTRIBUTION ===
+[2026-07-13 18:29:01] [02_descriptive_stats] condition
+LOW BACK PAIN                                                            11
+LOW BACK PAIN WITH SCIATICA                                               7
+(INSUFFICIENT DATA AVAILABLE)                                             5
+SCIATICA                                                                  2
+Low back pain with sciatica                                               1
+(NON SPINAL PAIN COMPLAINT)                                               1
+NECK                                                                      1
+(FOLLOW UP INCOMPLETE)                                                    1
+MID BACK PAIN                                                             1
+FEET AND BACK PAIN                                                        1
+Lower Back pain radiates to right ankle (INSUFFICIENT DATA AVAILABLE)     1
+Lumbar spine area - spectrum of pain - degenerative issues                1
+Disc bulging issue in lower back                                          1
+Name: count, dtype: int64
+[2026-07-13 18:29:01] [02_descriptive_stats] 
+=== BASELINE VAS ===
+[2026-07-13 18:29:01] [02_descriptive_stats] VAS PRE: mean=7.2, SD=1.9
+[2026-07-13 18:29:01] [02_descriptive_stats] VAS POST: mean=3.3, SD=2.4
+[2026-07-13 18:29:01] [02_descriptive_stats] 
+=== SURGICAL CANDIDATES ===
+[2026-07-13 18:29:01] [02_descriptive_stats] surgical_candidate
+1    31
+0     3
+Name: count, dtype: int64
+[2026-07-13 18:29:01] [02_descriptive_stats] 
+=== COMPOSITE SUCCESS ===
+[2026-07-13 18:29:01] [02_descriptive_stats] success
+0    22
+1    12
+Name: count, dtype: int64
+[2026-07-13 18:29:01] [02_descriptive_stats] 
+=== NEUROLOGICAL DEFICIT ===
+[2026-07-13 18:29:01] [02_descriptive_stats] PRE: {1: 21, 0: 13}
+[2026-07-13 18:29:01] [02_descriptive_stats] POST: {1: 19, 0: 15}
+[2026-07-13 18:29:01] [03_rq1_vas_change] Paired t-test: t=8.158, p=0.0000
+[2026-07-13 18:29:01] [03_rq1_vas_change] Wilcoxon: W=10.0, p=0.0000
+[2026-07-13 18:29:01] [03_rq1_vas_change] Cohen's d: 1.40
+[2026-07-13 18:29:01] [03_rq1_vas_change] MCID (>=30%): 26/34 = 76.5%
+[2026-07-13 18:29:01] [03_rq1_vas_change] SCB (>=50%): 22/34 = 64.7%
+[2026-07-13 18:29:02] [04_rq2_success_benchmark] Surgical candidates: 31
+[2026-07-13 18:29:02] [04_rq2_success_benchmark] Composite success: 11/31 = 35.5%
+[2026-07-13 18:29:02] [04_rq2_success_benchmark] 95% CI (Clopper-Pearson): [19.2%, 54.6%]
+[2026-07-13 18:29:02] [04_rq2_success_benchmark] One-sample z-test vs 75%: z=-5.081, p=1.0000 (one-tailed)
+[2026-07-13 18:29:03] [05_rq3] === RQ3: LOGISTIC REGRESSION ===
+[2026-07-13 18:29:03] [05_rq3] Features: ['age', 'vas_pre', 'maxlimit_num', 'neuro_def_pre', 'cond_Disc bulging issue in lower back', 'cond_LOW BACK PAIN', 'cond_LOW BACK PAIN WITH SCIATICA', 'cond_Low back pain with sciatica', 'cond_Lumbar spine area - spectrum of pain - degenerative issues', 'cond_MID BACK PAIN', 'cond_SCIATICA']
+[2026-07-13 18:29:03] [05_rq3] Intercept: -3.2011
+[2026-07-13 18:29:03] [05_rq3]   age: coef=2.3446, OR=10.4295
+[2026-07-13 18:29:03] [05_rq3]   vas_pre: coef=1.3401, OR=3.8194
+[2026-07-13 18:29:03] [05_rq3]   maxlimit_num: coef=-0.8894, OR=0.4109
+[2026-07-13 18:29:03] [05_rq3]   neuro_def_pre: coef=0.4222, OR=1.5253
+[2026-07-13 18:29:03] [05_rq3]   cond_Disc bulging issue in lower back: coef=-4.1011, OR=0.0166
+[2026-07-13 18:29:03] [05_rq3]   cond_LOW BACK PAIN: coef=-4.9949, OR=0.0068
+[2026-07-13 18:29:03] [05_rq3]   cond_LOW BACK PAIN WITH SCIATICA: coef=-4.5395, OR=0.0107
+[2026-07-13 18:29:03] [05_rq3]   cond_Low back pain with sciatica: coef=1.9538, OR=7.0554
+[2026-07-13 18:29:03] [05_rq3]   cond_Lumbar spine area - spectrum of pain - degenerative issues: coef=-6.7242, OR=0.0012
+[2026-07-13 18:29:03] [05_rq3]   cond_MID BACK PAIN: coef=8.5067, OR=4947.8083
+[2026-07-13 18:29:03] [05_rq3]   cond_SCIATICA: coef=-10.7477, OR=0.0000
+[2026-07-13 18:29:03] [05_rq3] Training accuracy: 0.870
+[2026-07-13 18:29:03] [05_rq3] AUC: 0.261 (approximate)
+[2026-07-13 18:29:03] [05_rq3] Note: Full inferential statistics (p-values, CI) require larger sample size.
+[2026-07-13 18:29:03] [05_rq3] This model structure will scale to N=200.
+[2026-07-13 18:29:03] [06_rq4_ml_model] 
+==================================================
+[2026-07-13 18:29:03] [06_rq4_ml_model] LogisticRegression | Threshold=0.50 | AUC=0.200 | F2=0.000
+[2026-07-13 18:29:03] [06_rq4_ml_model]               precision    recall  f1-score   support
+
+        Fail       0.50      0.40      0.44         5
+     Success       0.00      0.00      0.00         2
+
+    accuracy                           0.29         7
+   macro avg       0.25      0.20      0.22         7
+weighted avg       0.36      0.29      0.32         7
+
+[2026-07-13 18:29:03] [06_rq4_ml_model] 
+==================================================
+[2026-07-13 18:29:03] [06_rq4_ml_model] RandomForest | Threshold=0.50 | AUC=0.500 | F2=0.000
+[2026-07-13 18:29:03] [06_rq4_ml_model]               precision    recall  f1-score   support
+
+        Fail       0.67      0.80      0.73         5
+     Success       0.00      0.00      0.00         2
+
+    accuracy                           0.57         7
+   macro avg       0.33      0.40      0.36         7
+weighted avg       0.48      0.57      0.52         7
+
+[2026-07-13 18:29:03] [06_rq4_ml_model] 
+==================================================
+[2026-07-13 18:29:03] [06_rq4_ml_model] SVM | Threshold=0.50 | AUC=0.700 | F2=0.000
+[2026-07-13 18:29:03] [06_rq4_ml_model]               precision    recall  f1-score   support
+
+        Fail       0.71      1.00      0.83         5
+     Success       0.00      0.00      0.00         2
+
+    accuracy                           0.71         7
+   macro avg       0.36      0.50      0.42         7
+weighted avg       0.51      0.71      0.60         7
+
