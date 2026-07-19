@@ -20,7 +20,7 @@ Model of Treatment Success.\*\*
 
 |-----------|-------------|
 
-| `data/`   | De-identified dataset (currently 20-patient pilot; full N≈200 to be added) and data dictionary. |
+| `data/`   | De-identified dataset (currently 20-patient pilot; full N≈160 to be added) and data dictionary. |
 
 | `code/`   | Python scripts for data import, preprocessing, descriptive statistics, and all four research questions. |
 
@@ -36,7 +36,7 @@ Model of Treatment Success.\*\*
 
 \*\*Current status:\*\* 20 de-identified patients are included for code testing
 
-and preliminary analysis. The full dataset of approximately 200 patients
+and preliminary analysis. The full dataset of approximately 160 patients
 
 will be uploaded after final data collection and cleaning.
 
