@@ -1,0 +1,921 @@
+[2026-08-13 17:23:13] [00_import_raw] PRE columns: ['Patient ID#', 'Sex', 'D.O.B Dd/Mm/YYyy', 'Complaint', 'VAS PRE', 'FLEXION MOTION LIMIT PRE', 'FLEXION PAIN LEVEL PRE', 'EXTENSION MOTION LIMIT PRE', 'EXTENSION PAIN LEVEL PRE', 'RIGHT LATERAL FLEXION MOTION LIMIT PRE', 'RIGHT LATERAL FLEXION PAIN LEVEL PRE', 'LEFT LATERAL FLEXION MOTION LIMIT PRE', 'LEFT LATERAL FLEXION PAIN LEVEL PRE', 'RIGHT ROTATION MOTION LIMIT PRE', 'RIGHT ROTATION PAIN LEVEL PRE', 'LEFT ROTATION MOTION LIMIT PRE', 'LEFT ROTATION PAIN LEVEL PRE', 'LEFT KEMPS', 'RIGHT KEMPS', "FABER Patrick's TEST LEFT", "FABER Patrick's TEST RIGHT", 'Passive SLR LEFT', 'Passive SLR RIGHT', 'SLR DEGREES LEFT', 'SLR DEGREES RIGHT', 'SENSORY LEFT L4 PRE', 'SENSORY RIGHT L4 PRE', 'SENSORY LEFT L5 PRE', 'SENSORY RIGHT L5 PRE', 'SENSORY LEFT S1 PRE', 'SENSORY RIGHT S1 PRE', 'MOTOR LEFT L1-3 PRE', 'MOTOR RIGHT L1-3 PRE', 'MOTOR LEFT L4 PRE', 'MOTOR RIGHT L4 PRE', 'MOTOR LEFT L5 PRE', 'MOTOR RIGHT  L5 PRE', 'MOTOR LEFT S1 PRE', 'MOTOR RIGHT S1 PRE', 'DTR LEFT L4 PRE', 'DTR RIGHT L4 PRE', 'DTR LEFT S1 PRE', 'DTR RIGHT S1 PRE']
+[2026-08-13 17:23:13] [00_import_raw] POST columns: ['', 'Patient ID#', 'Sex', 'D.O.B Dd/Mm/YYyy', 'Complaint', 'VAS POST', 'FLEXION MOTION LIMIT POST', 'FLEXION PAIN LEVEL POST', 'EXTENSION MOTION LIMIT POST', 'EXTENSION PAIN LEVEL POST', 'RIGHT LATERAL FLEXION MOTION LIMIT POST', 'RIGHT LATERAL FLEXION PAIN LEVEL POST', 'LEFT LATERAL FLEXION MOTION LIMIT POST', 'LEFT LATERAL FLEXION PAIN LEVEL POST', 'RIGHT ROTATION MOTION LIMIT POST', 'RIGHT ROTATION PAIN LEVEL POST', 'LEFT ROTATION MOTION LIMIT POST', 'LEFT ROTATION MOTION LIMIT POST', 'LEFT KEMPS', 'RIGHT KEMPS', "FABER Patrick's TEST LEFT", "FABER Patrick's TEST RIGHT", 'Passive SLR LEFT', 'Passive SLR RIGHT', 'SLR DEGREES LEFT', 'SLR DEGREES RIGHT', 'SENSORY LEFT L4 POST', 'SENSORY RIGHT L4 POST', 'SENSORY LEFT L5 POST', 'SENSORY RIGHT L5 POST', 'SENSORY LEFT S1 POST', 'SENSORY RIGHT S1 POST', 'MOTOR LEFT L1-3 POST', 'MOTOR RIGHT L1-3 POST', 'MOTOR LEFT L4 POST', 'MOTOR RIGHT L4 POST', 'MOTOR LEFT L5 POST', 'MOTOR RIGHT  L5 POST', 'MOTOR LEFT S1 POST', 'MOTOR RIGHT S1 POST', 'DTR LEFT L4 POST', 'DTR RIGHT L4 POST', 'DTR LEFT S1 POST', 'DTR RIGHT S1 POST']
+[2026-08-13 17:23:13] [00_import_raw] Merged data shape: (160, 86)
+[2026-08-13 17:23:13] [00_import_raw] Merged columns (86):
+[2026-08-13 17:23:13] [00_import_raw]   Patient ID#
+[2026-08-13 17:23:13] [00_import_raw]   Sex_PRE
+[2026-08-13 17:23:13] [00_import_raw]   D.O.B Dd/Mm/YYyy_PRE
+[2026-08-13 17:23:13] [00_import_raw]   Complaint_PRE
+[2026-08-13 17:23:13] [00_import_raw]   VAS PRE
+[2026-08-13 17:23:13] [00_import_raw]   FLEXION MOTION LIMIT PRE
+[2026-08-13 17:23:13] [00_import_raw]   FLEXION PAIN LEVEL PRE
+[2026-08-13 17:23:13] [00_import_raw]   EXTENSION MOTION LIMIT PRE
+[2026-08-13 17:23:13] [00_import_raw]   EXTENSION PAIN LEVEL PRE
+[2026-08-13 17:23:13] [00_import_raw]   RIGHT LATERAL FLEXION MOTION LIMIT PRE
+[2026-08-13 17:23:13] [00_import_raw]   RIGHT LATERAL FLEXION PAIN LEVEL PRE
+[2026-08-13 17:23:13] [00_import_raw]   LEFT LATERAL FLEXION MOTION LIMIT PRE
+[2026-08-13 17:23:13] [00_import_raw]   LEFT LATERAL FLEXION PAIN LEVEL PRE
+[2026-08-13 17:23:13] [00_import_raw]   RIGHT ROTATION MOTION LIMIT PRE
+[2026-08-13 17:23:13] [00_import_raw]   RIGHT ROTATION PAIN LEVEL PRE
+[2026-08-13 17:23:13] [00_import_raw]   LEFT ROTATION MOTION LIMIT PRE
+[2026-08-13 17:23:13] [00_import_raw]   LEFT ROTATION PAIN LEVEL PRE
+[2026-08-13 17:23:13] [00_import_raw]   LEFT KEMPS_PRE
+[2026-08-13 17:23:13] [00_import_raw]   RIGHT KEMPS_PRE
+[2026-08-13 17:23:13] [00_import_raw]   FABER Patrick's TEST LEFT_PRE
+[2026-08-13 17:23:13] [00_import_raw]   FABER Patrick's TEST RIGHT_PRE
+[2026-08-13 17:23:13] [00_import_raw]   Passive SLR LEFT_PRE
+[2026-08-13 17:23:13] [00_import_raw]   Passive SLR RIGHT_PRE
+[2026-08-13 17:23:13] [00_import_raw]   SLR DEGREES LEFT_PRE
+[2026-08-13 17:23:13] [00_import_raw]   SLR DEGREES RIGHT_PRE
+[2026-08-13 17:23:13] [00_import_raw]   SENSORY LEFT L4 PRE
+[2026-08-13 17:23:13] [00_import_raw]   SENSORY RIGHT L4 PRE
+[2026-08-13 17:23:13] [00_import_raw]   SENSORY LEFT L5 PRE
+[2026-08-13 17:23:13] [00_import_raw]   SENSORY RIGHT L5 PRE
+[2026-08-13 17:23:13] [00_import_raw]   SENSORY LEFT S1 PRE
+[2026-08-13 17:23:13] [00_import_raw]   SENSORY RIGHT S1 PRE
+[2026-08-13 17:23:13] [00_import_raw]   MOTOR LEFT L1-3 PRE
+[2026-08-13 17:23:13] [00_import_raw]   MOTOR RIGHT L1-3 PRE
+[2026-08-13 17:23:13] [00_import_raw]   MOTOR LEFT L4 PRE
+[2026-08-13 17:23:13] [00_import_raw]   MOTOR RIGHT L4 PRE
+[2026-08-13 17:23:13] [00_import_raw]   MOTOR LEFT L5 PRE
+[2026-08-13 17:23:13] [00_import_raw]   MOTOR RIGHT  L5 PRE
+[2026-08-13 17:23:13] [00_import_raw]   MOTOR LEFT S1 PRE
+[2026-08-13 17:23:13] [00_import_raw]   MOTOR RIGHT S1 PRE
+[2026-08-13 17:23:13] [00_import_raw]   DTR LEFT L4 PRE
+[2026-08-13 17:23:13] [00_import_raw]   DTR RIGHT L4 PRE
+[2026-08-13 17:23:13] [00_import_raw]   DTR LEFT S1 PRE
+[2026-08-13 17:23:13] [00_import_raw]   DTR RIGHT S1 PRE
+[2026-08-13 17:23:13] [00_import_raw]   
+[2026-08-13 17:23:13] [00_import_raw]   Sex_POST
+[2026-08-13 17:23:13] [00_import_raw]   D.O.B Dd/Mm/YYyy_POST
+[2026-08-13 17:23:13] [00_import_raw]   Complaint_POST
+[2026-08-13 17:23:13] [00_import_raw]   VAS POST
+[2026-08-13 17:23:13] [00_import_raw]   FLEXION MOTION LIMIT POST
+[2026-08-13 17:23:13] [00_import_raw]   FLEXION PAIN LEVEL POST
+[2026-08-13 17:23:13] [00_import_raw]   EXTENSION MOTION LIMIT POST
+[2026-08-13 17:23:13] [00_import_raw]   EXTENSION PAIN LEVEL POST
+[2026-08-13 17:23:13] [00_import_raw]   RIGHT LATERAL FLEXION MOTION LIMIT POST
+[2026-08-13 17:23:13] [00_import_raw]   RIGHT LATERAL FLEXION PAIN LEVEL POST
+[2026-08-13 17:23:13] [00_import_raw]   LEFT LATERAL FLEXION MOTION LIMIT POST
+[2026-08-13 17:23:13] [00_import_raw]   LEFT LATERAL FLEXION PAIN LEVEL POST
+[2026-08-13 17:23:13] [00_import_raw]   RIGHT ROTATION MOTION LIMIT POST
+[2026-08-13 17:23:13] [00_import_raw]   RIGHT ROTATION PAIN LEVEL POST
+[2026-08-13 17:23:13] [00_import_raw]   LEFT ROTATION MOTION LIMIT POST
+[2026-08-13 17:23:13] [00_import_raw]   LEFT ROTATION PAIN LEVEL POST
+[2026-08-13 17:23:13] [00_import_raw]   LEFT KEMPS_POST
+[2026-08-13 17:23:13] [00_import_raw]   RIGHT KEMPS_POST
+[2026-08-13 17:23:13] [00_import_raw]   FABER Patrick's TEST LEFT_POST
+[2026-08-13 17:23:13] [00_import_raw]   FABER Patrick's TEST RIGHT_POST
+[2026-08-13 17:23:13] [00_import_raw]   Passive SLR LEFT_POST
+[2026-08-13 17:23:13] [00_import_raw]   Passive SLR RIGHT_POST
+[2026-08-13 17:23:13] [00_import_raw]   SLR DEGREES LEFT_POST
+[2026-08-13 17:23:13] [00_import_raw]   SLR DEGREES RIGHT_POST
+[2026-08-13 17:23:13] [00_import_raw]   SENSORY LEFT L4 POST
+[2026-08-13 17:23:13] [00_import_raw]   SENSORY RIGHT L4 POST
+[2026-08-13 17:23:13] [00_import_raw]   SENSORY LEFT L5 POST
+[2026-08-13 17:23:13] [00_import_raw]   SENSORY RIGHT L5 POST
+[2026-08-13 17:23:13] [00_import_raw]   SENSORY LEFT S1 POST
+[2026-08-13 17:23:13] [00_import_raw]   SENSORY RIGHT S1 POST
+[2026-08-13 17:23:13] [00_import_raw]   MOTOR LEFT L1-3 POST
+[2026-08-13 17:23:13] [00_import_raw]   MOTOR RIGHT L1-3 POST
+[2026-08-13 17:23:13] [00_import_raw]   MOTOR LEFT L4 POST
+[2026-08-13 17:23:13] [00_import_raw]   MOTOR RIGHT L4 POST
+[2026-08-13 17:23:13] [00_import_raw]   MOTOR LEFT L5 POST
+[2026-08-13 17:23:13] [00_import_raw]   MOTOR RIGHT  L5 POST
+[2026-08-13 17:23:13] [00_import_raw]   MOTOR LEFT S1 POST
+[2026-08-13 17:23:13] [00_import_raw]   MOTOR RIGHT S1 POST
+[2026-08-13 17:23:13] [00_import_raw]   DTR LEFT L4 POST
+[2026-08-13 17:23:13] [00_import_raw]   DTR RIGHT L4 POST
+[2026-08-13 17:23:13] [00_import_raw]   DTR LEFT S1 POST
+[2026-08-13 17:23:13] [00_import_raw]   DTR RIGHT S1 POST
+[2026-08-13 17:23:13] [00_import_raw] 
+Raw merged data saved to ../data/raw_merged.csv with 160 patients.
+[2026-08-13 17:23:13] [01_preprocess] Condition variable retained for descriptive reference only.
+[2026-08-13 17:23:13] [01_preprocess] Unique complaints: 67
+[2026-08-13 17:23:13] [01_preprocess] 
+[2026-08-13 17:23:13] [01_preprocess] VAS PRE missing before fill: 7
+[2026-08-13 17:23:13] [01_preprocess] VAS POST missing before fill: 17
+[2026-08-13 17:23:13] [01_preprocess] VAS PRE missing after fill: 0
+[2026-08-13 17:23:13] [01_preprocess] VAS POST missing after fill: 0
+[2026-08-13 17:23:13] [01_preprocess] clinical_data.csv saved with 160 patients and 66 columns.
+[2026-08-13 17:23:13] [01_preprocess] 
+[2026-08-13 17:23:13] [01_preprocess] Derived variables summary:
+[2026-08-13 17:23:13] [01_preprocess]   maxpain_pre:  {'MOD': 49, 'SEVERE': 37, 'MILD': 33, 'NONE': 16}
+[2026-08-13 17:23:13] [01_preprocess]   maxpain_post: {'NONE': 70, 'MILD': 46, 'MOD': 17, 'SEVERE': 4}
+[2026-08-13 17:23:13] [01_preprocess]   neuro_def_pre:  {1: 108, 0: 52}
+[2026-08-13 17:23:13] [01_preprocess]   neuro_def_post: {0: 80, 1: 80}
+[2026-08-13 17:23:13] [01_preprocess]   surgical_candidate: {1: 138, 0: 22}
+[2026-08-13 17:23:13] [01_preprocess]   success: {0: 96, 1: 64}
+[2026-08-13 17:23:13] [02_descriptive_stats] === DEMOGRAPHICS ===
+[2026-08-13 17:23:13] [02_descriptive_stats] Total patients: 160
+[2026-08-13 17:23:13] [02_descriptive_stats] Age: mean=59.9, SD=17.1, range=17.0-93.0
+[2026-08-13 17:23:13] [02_descriptive_stats] 
+=== CONDITION DISTRIBUTION ===
+[2026-08-13 17:23:13] [02_descriptive_stats] condition_raw
+LOW BACK PAIN                    53
+LOWER BACK PAIN                  18
+LOW BACK PAIN WITH SCIATICA       8
+SCIATICA                          5
+(INSUFFICIENT DATA AVAILABLE)     5
+                                 ..
+HIPAND BACK PAIN                  1
+JOINT MUSCLE PAIN                 1
+PINCHED NERVE LOWER BACK PAIN     1
+BUTTOCKS PAIN                     1
+KNEE PAIN                         1
+Name: count, Length: 67, dtype: int64
+[2026-08-13 17:23:13] [02_descriptive_stats] 
+=== BASELINE VAS ===
+[2026-08-13 17:23:13] [02_descriptive_stats] VAS PRE: mean=6.9, SD=2.4
+[2026-08-13 17:23:13] [02_descriptive_stats] VAS POST: mean=2.2, SD=2.5
+[2026-08-13 17:23:13] [02_descriptive_stats] 
+=== SURGICAL CANDIDATES ===
+[2026-08-13 17:23:13] [02_descriptive_stats] surgical_candidate
+1    138
+0     22
+Name: count, dtype: int64
+[2026-08-13 17:23:13] [02_descriptive_stats] 
+=== COMPOSITE SUCCESS ===
+[2026-08-13 17:23:13] [02_descriptive_stats] success
+0    96
+1    64
+Name: count, dtype: int64
+[2026-08-13 17:23:13] [02_descriptive_stats] 
+=== NEUROLOGICAL DEFICIT ===
+[2026-08-13 17:23:13] [02_descriptive_stats] PRE: {1: 108, 0: 52}
+[2026-08-13 17:23:13] [02_descriptive_stats] POST: {0: 80, 1: 80}
+[2026-08-13 17:23:14] [02_eda] === EXPLORATORY DATA ANALYSIS ===
+[2026-08-13 17:23:14] [02_eda] Total patients: 160
+[2026-08-13 17:23:15] [02_eda] Figure 1 saved: Age distribution histogram
+[2026-08-13 17:23:15] [02_eda]   Mean age: 59.9 (SD=17.1)
+[2026-08-13 17:23:15] [02_eda]   Range: 17–93
+[2026-08-13 17:23:15] [02_eda] Figure 2 saved: Pre/Post VAS distributions
+[2026-08-13 17:23:15] [02_eda]   Pre-treatment VAS: mean=6.9, SD=2.4
+[2026-08-13 17:23:15] [02_eda]   Post-treatment VAS: mean=2.2, SD=2.5
+[2026-08-13 17:23:15] [02_eda] Figure 3 saved: VAS change box plot
+[2026-08-13 17:23:15] [02_eda]   Mean VAS reduction: 4.7 (SD=2.8)
+[2026-08-13 17:23:15] [02_eda]   Median reduction: 5.0
+[2026-08-13 17:23:15] [02_eda] Figure 4 saved: MCID=129/160 (80.6%), SCB=113/160 (70.6%)
+[2026-08-13 17:23:15] [02_eda] Figure 5 saved: Surgical candidates=138, Composite success=64
+[2026-08-13 17:23:15] [02_eda] Figure 6 saved: Surgical candidate success rate = 52/138 (37.7%)
+[2026-08-13 17:23:15] [02_eda] Figure 7 saved: Neuro deficit PRE={1: 108, 0: 52}, POST={0: 80, 1: 80}
+[2026-08-13 17:23:15] [02_eda] Figure 8 saved: Max pain shift from pre to post
+[2026-08-13 17:23:15] [02_eda] 
+[2026-08-13 17:23:15] [02_eda] === EDA COMPLETE ===
+[2026-08-13 17:23:15] [02_eda] Figures saved in output/figures/
+[2026-08-13 17:23:15] [02_eda] 
+[2026-08-13 17:23:15] [02_eda] Key findings:
+[2026-08-13 17:23:15] [02_eda]   1. Mean VAS reduction: 4.7 points (Cohen's d ≈ 1.65)
+[2026-08-13 17:23:15] [02_eda]   2. 80.6% achieved MCID; 70.6% achieved SCB
+[2026-08-13 17:23:15] [02_eda]   3. 86.2% are surgical candidates
+[2026-08-13 17:23:15] [02_eda]   4. Composite success rate: 40.0% overall; 37.7% among surgical candidates
+[2026-08-13 17:23:15] [02_eda]   5. Neurological deficit: 108 pre → 80 post
+[2026-08-13 17:23:16] [03_rq1_vas_change] Paired t-test: t=20.872, p=0.0000
+[2026-08-13 17:23:16] [03_rq1_vas_change] Wilcoxon: W=21.0, p=0.0000
+[2026-08-13 17:23:16] [03_rq1_vas_change] Cohen's d: 1.65
+[2026-08-13 17:23:16] [03_rq1_vas_change] MCID (>=30%): 129/160 = 80.6%
+[2026-08-13 17:23:16] [03_rq1_vas_change] SCB (>=50%): 113/160 = 70.6%
+[2026-08-13 17:23:17] [04_rq2_success_benchmark] Surgical candidates: 138
+[2026-08-13 17:23:17] [04_rq2_success_benchmark] Composite success: 52/138 = 37.7%
+[2026-08-13 17:23:17] [04_rq2_success_benchmark] 95% CI (Clopper-Pearson): [29.6%, 46.3%]
+[2026-08-13 17:23:17] [04_rq2_success_benchmark] One-sample z-test vs 75%: z=-10.124, p=1.0000 (one-tailed)
+[2026-08-13 17:23:17] [05_rq3] === RQ3: LOGISTIC REGRESSION ===
+[2026-08-13 17:23:17] [05_rq3] Features (condition excluded due to low variability): ['age', 'vas_pre', 'maxlimit_num', 'neuro_def_pre']
+[2026-08-13 17:23:17] [05_rq3] Intercept: -0.4389
+[2026-08-13 17:23:17] [05_rq3]   age: coef=-0.0736, OR=0.9290
+[2026-08-13 17:23:17] [05_rq3]   vas_pre: coef=0.1784, OR=1.1953
+[2026-08-13 17:23:17] [05_rq3]   maxlimit_num: coef=-0.3745, OR=0.6876
+[2026-08-13 17:23:17] [05_rq3]   neuro_def_pre: coef=-0.2201, OR=0.8024
+[2026-08-13 17:23:17] [05_rq3] Training accuracy: 0.649
+[2026-08-13 17:23:17] [05_rq3] Note: Full inferential statistics (p-values, CI) require larger sample size.
+[2026-08-13 17:23:17] [05_rq3] The condition variable was excluded due to insufficient variability
+[2026-08-13 17:23:17] [05_rq3] (96.7% of patients presented with disc herniation-related complaints).
+[2026-08-13 17:23:17] [05_rq3] This model structure will scale to N=160.
+[2026-08-13 17:23:18] [06_rq4] 
+==================================================
+[2026-08-13 17:23:18] [06_rq4] LogisticRegression | Threshold=0.50 | AUC=0.645 | F2=0.595
+[2026-08-13 17:23:18] [06_rq4]               precision    recall  f1-score   support
+
+        Fail       0.70      0.58      0.64        24
+     Success       0.50      0.62      0.56        16
+
+    accuracy                           0.60        40
+   macro avg       0.60      0.60      0.60        40
+weighted avg       0.62      0.60      0.60        40
+
+[2026-08-13 17:23:18] [06_rq4] 
+==================================================
+[2026-08-13 17:23:18] [06_rq4] RandomForest | Threshold=0.50 | AUC=0.573 | F2=0.338
+[2026-08-13 17:23:18] [06_rq4]               precision    recall  f1-score   support
+
+        Fail       0.63      0.79      0.70        24
+     Success       0.50      0.31      0.38        16
+
+    accuracy                           0.60        40
+   macro avg       0.57      0.55      0.54        40
+weighted avg       0.58      0.60      0.58        40
+
+[2026-08-13 17:23:18] [06_rq4] 
+==================================================
+[2026-08-13 17:23:18] [06_rq4] SVM | Threshold=0.50 | AUC=0.293 | F2=0.139
+[2026-08-13 17:23:18] [06_rq4]               precision    recall  f1-score   support
+
+        Fail       0.56      0.75      0.64        24
+     Success       0.25      0.12      0.17        16
+
+    accuracy                           0.50        40
+   macro avg       0.41      0.44      0.40        40
+weighted avg       0.44      0.50      0.45        40
+
+[2026-08-13 17:23:18] [06_rq4] 
+Condition variable excluded due to insufficient variability
+[2026-08-13 17:23:18] [06_rq4] (96.7% disc herniation-related complaints).
+[2026-08-13 17:23:18] [06_rq4] Features used: ['age', 'vas_pre', 'maxlimit_num', 'neuro_def_pre']
+[2026-08-13 17:23:19] [08_advanced] === ADVANCED RQ4: EXPANDED FEATURES + PCA ===
+[2026-08-13 17:23:19] [08_advanced] Total patients: 160
+[2026-08-13 17:23:19] [08_advanced] SLR features added: mean, min, asymmetry
+[2026-08-13 17:23:19] [08_advanced] Special tests feature added from 6 columns
+[2026-08-13 17:23:19] [08_advanced] Total features before PCA: 10
+[2026-08-13 17:23:19] [08_advanced] Feature names: ['age', 'vas_pre', 'maxlimit_num', 'neuro_def_pre', 'maxpain_num', 'neuro_abnormal_count', 'slr_mean', 'slr_min', 'slr_asymmetry', 'positive_tests_count']
+[2026-08-13 17:23:19] [08_advanced] Train: 128 patients (51 successes) | Test: 32 (13 successes)
+[2026-08-13 17:23:19] [08_advanced] 
+[2026-08-13 17:23:19] [08_advanced] --- PCA Analysis (fitted on training data only) ---
+[2026-08-13 17:23:19] [08_advanced] Components needed for 95% variance: 8
+[2026-08-13 17:23:19] [08_advanced]   PC1: 0.296 (cumulative: 0.296)
+[2026-08-13 17:23:19] [08_advanced]   PC2: 0.186 (cumulative: 0.483)
+[2026-08-13 17:23:19] [08_advanced]   PC3: 0.115 (cumulative: 0.598)
+[2026-08-13 17:23:19] [08_advanced]   PC4: 0.098 (cumulative: 0.696)
+[2026-08-13 17:23:19] [08_advanced]   PC5: 0.084 (cumulative: 0.781)
+[2026-08-13 17:23:19] [08_advanced]   PC6: 0.070 (cumulative: 0.851)
+[2026-08-13 17:23:19] [08_advanced]   PC7: 0.061 (cumulative: 0.911)
+[2026-08-13 17:23:19] [08_advanced]   PC8: 0.057 (cumulative: 0.968)
+[2026-08-13 17:23:19] [08_advanced]   PC9: 0.030 (cumulative: 0.998)
+[2026-08-13 17:23:19] [08_advanced]   PC10: 0.002 (cumulative: 1.000)
+[2026-08-13 17:23:19] [08_advanced] Features after PCA: 8
+[2026-08-13 17:23:19] [08_advanced] 
+[2026-08-13 17:23:19] [08_advanced] PCA Loadings (feature contributions to each component):
+[2026-08-13 17:23:19] [08_advanced]                            PC1       PC2       PC3       PC4       PC5       PC6       PC7       PC8
+age                   0.062536  0.326631  0.499903  0.019003  0.683023  0.239364 -0.295469  0.135484
+vas_pre               0.311457  0.206156  0.066007  0.499511  0.228090 -0.257704  0.655876 -0.238839
+maxlimit_num          0.389630  0.058409 -0.105170  0.287455 -0.123851 -0.372774 -0.251392  0.729029
+neuro_def_pre         0.339212  0.374072 -0.050620 -0.455959 -0.180038 -0.128699 -0.009483 -0.179150
+maxpain_num           0.342878  0.026273 -0.221682  0.482669 -0.132142  0.284264 -0.530086 -0.467401
+neuro_abnormal_count  0.323339  0.425531  0.208301 -0.306906 -0.237397 -0.094779 -0.039900 -0.115996
+slr_mean             -0.321008  0.448459 -0.479627  0.053481  0.173459 -0.112274 -0.077692 -0.016453
+slr_min              -0.364203  0.513974 -0.251329  0.126355 -0.059883  0.073118  0.020095  0.114312
+slr_asymmetry         0.235214 -0.244750 -0.479627 -0.312371  0.568835 -0.302732 -0.110923 -0.133083
+positive_tests_count  0.345076  0.022710 -0.341078 -0.126638  0.051339  0.722068  0.343381  0.313135
+[2026-08-13 17:23:19] [08_advanced] 
+[2026-08-13 17:23:19] [08_advanced] --- LogisticRegression ---
+[2026-08-13 17:23:19] [08_advanced] Tuning hyperparameters...
+[2026-08-13 17:23:21] [08_advanced] Best params: {'C': 0.1, 'penalty': 'l2', 'solver': 'saga'}
+[2026-08-13 17:23:21] [08_advanced] Best CV F1-score: 0.5878
+[2026-08-13 17:23:21] [08_advanced] Best F1 threshold: 0.48
+[2026-08-13 17:23:21] [08_advanced] At best F1 → AUC: 0.7206 | Sens: 0.7692 | PPV: 0.5882 | F1: 0.6667
+[2026-08-13 17:23:21] [08_advanced] At thresh=0.50 → Sens: 0.6154 | PPV: 0.6154 | F1: 0.6154
+[2026-08-13 17:23:21] [08_advanced] No threshold met both sensitivity ≥ 0.85 and PPV ≥ 0.70
+[2026-08-13 17:23:21] [08_advanced] 
+[2026-08-13 17:23:21] [08_advanced] --- RandomForest ---
+[2026-08-13 17:23:21] [08_advanced] Tuning hyperparameters...
+[2026-08-13 17:23:27] [08_advanced] Best params: {'max_depth': 3, 'min_samples_leaf': 10, 'min_samples_split': 5, 'n_estimators': 300}
+[2026-08-13 17:23:27] [08_advanced] Best CV F1-score: 0.5986
+[2026-08-13 17:23:27] [08_advanced] Best F1 threshold: 0.56
+[2026-08-13 17:23:27] [08_advanced] At best F1 → AUC: 0.7287 | Sens: 0.6154 | PPV: 0.7273 | F1: 0.6667
+[2026-08-13 17:23:27] [08_advanced] At thresh=0.50 → Sens: 0.6154 | PPV: 0.5714 | F1: 0.5926
+[2026-08-13 17:23:27] [08_advanced] No threshold met both sensitivity ≥ 0.85 and PPV ≥ 0.70
+[2026-08-13 17:23:27] [08_advanced] 
+[2026-08-13 17:23:27] [08_advanced] --- LightGBM ---
+[2026-08-13 17:23:27] [08_advanced] Tuning hyperparameters...
+[2026-08-13 17:24:16] [08_advanced] Best params: {'learning_rate': 0.1, 'max_depth': 4, 'min_child_samples': 10, 'n_estimators': 50, 'num_leaves': 7, 'reg_alpha': 0.1, 'reg_lambda': 0.1}
+[2026-08-13 17:24:16] [08_advanced] Best CV F1-score: 0.5709
+[2026-08-13 17:24:16] [08_advanced] Best F1 threshold: 0.40
+[2026-08-13 17:24:16] [08_advanced] At best F1 → AUC: 0.7287 | Sens: 0.7692 | PPV: 0.6250 | F1: 0.6897
+[2026-08-13 17:24:16] [08_advanced] At thresh=0.50 → Sens: 0.6923 | PPV: 0.6000 | F1: 0.6429
+[2026-08-13 17:24:16] [08_advanced] No threshold met both sensitivity ≥ 0.85 and PPV ≥ 0.70
+[2026-08-13 17:24:16] [08_advanced] 
+[2026-08-13 17:24:16] [08_advanced] --- SVM ---
+[2026-08-13 17:24:16] [08_advanced] Tuning hyperparameters...
+[2026-08-13 17:24:16] [08_advanced] Best params: {'C': 1.0, 'gamma': 0.1}
+[2026-08-13 17:24:16] [08_advanced] Best CV F1-score: 0.6083
+[2026-08-13 17:24:16] [08_advanced] Best F1 threshold: 0.42
+[2026-08-13 17:24:16] [08_advanced] At best F1 → AUC: 0.7490 | Sens: 0.6923 | PPV: 0.6923 | F1: 0.6923
+[2026-08-13 17:24:16] [08_advanced] At thresh=0.50 → Sens: 0.5385 | PPV: 0.7000 | F1: 0.6087
+[2026-08-13 17:24:16] [08_advanced] No threshold met both sensitivity ≥ 0.85 and PPV ≥ 0.70
+[2026-08-13 17:24:16] [08_advanced] 
+[2026-08-13 17:24:16] [08_advanced] === MODEL COMPARISON ===
+[2026-08-13 17:24:16] [08_advanced] 
+[2026-08-13 17:24:16] [08_advanced] Model                          AUC     Sens      PPV       F2       F1      MCC
+[2026-08-13 17:24:16] [08_advanced] ----------------------------------------------------------------------
+[2026-08-13 17:24:16] [08_advanced] LogisticRegression          0.7206   0.7692   0.5882   0.7246   0.6667   0.3945
+[2026-08-13 17:24:16] [08_advanced] RandomForest                0.7287   0.6154   0.7273   0.6349   0.6667   0.4731
+[2026-08-13 17:24:16] [08_advanced] LightGBM                    0.7287   0.7692   0.6250   0.7353   0.6897   0.4454
+[2026-08-13 17:24:16] [08_advanced] SVM                         0.7490   0.6923   0.6923   0.6923   0.6923   0.4818
+[2026-08-13 17:24:16] [08_advanced] 
+[2026-08-13 17:24:16] [08_advanced] Best model (by clinical balance): LightGBM
+[2026-08-13 17:24:16] [08_advanced] === ROC CURVES ===
+[2026-08-13 17:24:16] [08_advanced] ROC curve saved: output/figures/roc_curves_advanced.png
+[2026-08-13 17:24:16] [08_advanced] 
+[2026-08-13 17:24:16] [08_advanced] AUC values (test set, 80/20 split):
+[2026-08-13 17:24:16] [08_advanced]   LogisticRegression        AUC = 0.7206
+[2026-08-13 17:24:16] [08_advanced]   RandomForest              AUC = 0.7287
+[2026-08-13 17:24:16] [08_advanced]   LightGBM                  AUC = 0.7287
+[2026-08-13 17:24:16] [08_advanced]   SVM                       AUC = 0.7490
+[2026-08-13 17:24:16] [08_advanced] 
+[2026-08-13 17:24:17] [08_advanced] Confusion matrix saved: output/figures/best_model_confusion_matrix.png
+[2026-08-13 17:24:17] [08_advanced] 
+[2026-08-13 17:24:17] [08_advanced] Best Model Confusion Matrix at optimal threshold (0.40):
+[2026-08-13 17:24:17] [08_advanced]   TP= 10  FP=  6
+[2026-08-13 17:24:17] [08_advanced]   FN=  3  TN= 13
+[2026-08-13 17:24:17] [08_advanced] 
+[2026-08-13 17:24:17] [08_advanced]   AUC=0.7287, F1=0.6897, Sens=0.7692
+[2026-08-13 17:24:17] [08_advanced] ❌ Neither target met. Best F2: 0.7353
+[2026-08-13 17:24:17] [08_advanced] 
+[2026-08-13 17:24:17] [08_advanced] === FEATURE IMPORTANCE (PCA Components) ===
+[2026-08-13 17:24:17] [08_advanced] Feature importances:
+[2026-08-13 17:24:17] [08_advanced]   PC1: 24.0000
+[2026-08-13 17:24:17] [08_advanced]   PC2: 30.0000
+[2026-08-13 17:24:17] [08_advanced]   PC3: 25.0000
+[2026-08-13 17:24:17] [08_advanced]   PC4: 41.0000
+[2026-08-13 17:24:17] [08_advanced]   PC5: 42.0000
+[2026-08-13 17:24:17] [08_advanced]   PC6: 31.0000
+[2026-08-13 17:24:17] [08_advanced]   PC7: 29.0000
+[2026-08-13 17:24:17] [08_advanced]   PC8: 47.0000
+[2026-08-13 17:24:17] [08_advanced] 
+[2026-08-13 17:24:17] [08_advanced] Top contributing original features to PC1:
+[2026-08-13 17:24:17] [08_advanced]   maxlimit_num: 0.3896
+[2026-08-13 17:24:17] [08_advanced]   slr_min: 0.3642
+[2026-08-13 17:24:17] [08_advanced]   positive_tests_count: 0.3451
+[2026-08-13 17:24:17] [08_advanced]   maxpain_num: 0.3429
+[2026-08-13 17:24:17] [08_advanced]   neuro_def_pre: 0.3392
+[2026-08-13 17:24:17] [08_advanced] 
+[2026-08-13 17:24:17] [08_advanced] Figure saved: output/figures/advanced_rq4_results.png
+[2026-08-13 17:24:17] [08_advanced] Summary saved: output/tables/advanced_rq4_summary.csv
+[2026-08-13 17:24:17] [08_advanced] 
+[2026-08-13 17:24:17] [08_advanced] === ADVANCED RQ4 ANALYSIS COMPLETE ===
+[2026-08-13 17:24:17] [08_advanced] Best model saved: output/models/lightgbm_best.pkl
+[2026-08-13 17:24:17] [08_advanced] Scaler and PCA saved: output/models/
+[2026-08-13 17:24:17] [08_advanced] 
+[2026-08-13 17:24:22] [10_shap] === SHAP ANALYSIS ===
+[2026-08-13 17:24:23] [10_shap] SHAP summary plot saved to output/figures/shap_summary.png
+[2026-08-14 01:33:40] [00_import_raw] PRE columns: ['Patient ID#', 'Sex', 'D.O.B Dd/Mm/YYyy', 'Complaint', 'VAS PRE', 'FLEXION MOTION LIMIT PRE', 'FLEXION PAIN LEVEL PRE', 'EXTENSION MOTION LIMIT PRE', 'EXTENSION PAIN LEVEL PRE', 'RIGHT LATERAL FLEXION MOTION LIMIT PRE', 'RIGHT LATERAL FLEXION PAIN LEVEL PRE', 'LEFT LATERAL FLEXION MOTION LIMIT PRE', 'LEFT LATERAL FLEXION PAIN LEVEL PRE', 'RIGHT ROTATION MOTION LIMIT PRE', 'RIGHT ROTATION PAIN LEVEL PRE', 'LEFT ROTATION MOTION LIMIT PRE', 'LEFT ROTATION PAIN LEVEL PRE', 'LEFT KEMPS', 'RIGHT KEMPS', "FABER Patrick's TEST LEFT", "FABER Patrick's TEST RIGHT", 'Passive SLR LEFT', 'Passive SLR RIGHT', 'SLR DEGREES LEFT', 'SLR DEGREES RIGHT', 'SENSORY LEFT L4 PRE', 'SENSORY RIGHT L4 PRE', 'SENSORY LEFT L5 PRE', 'SENSORY RIGHT L5 PRE', 'SENSORY LEFT S1 PRE', 'SENSORY RIGHT S1 PRE', 'MOTOR LEFT L1-3 PRE', 'MOTOR RIGHT L1-3 PRE', 'MOTOR LEFT L4 PRE', 'MOTOR RIGHT L4 PRE', 'MOTOR LEFT L5 PRE', 'MOTOR RIGHT  L5 PRE', 'MOTOR LEFT S1 PRE', 'MOTOR RIGHT S1 PRE', 'DTR LEFT L4 PRE', 'DTR RIGHT L4 PRE', 'DTR LEFT S1 PRE', 'DTR RIGHT S1 PRE']
+[2026-08-14 01:33:40] [00_import_raw] POST columns: ['', 'Patient ID#', 'Sex', 'D.O.B Dd/Mm/YYyy', 'Complaint', 'VAS POST', 'FLEXION MOTION LIMIT POST', 'FLEXION PAIN LEVEL POST', 'EXTENSION MOTION LIMIT POST', 'EXTENSION PAIN LEVEL POST', 'RIGHT LATERAL FLEXION MOTION LIMIT POST', 'RIGHT LATERAL FLEXION PAIN LEVEL POST', 'LEFT LATERAL FLEXION MOTION LIMIT POST', 'LEFT LATERAL FLEXION PAIN LEVEL POST', 'RIGHT ROTATION MOTION LIMIT POST', 'RIGHT ROTATION PAIN LEVEL POST', 'LEFT ROTATION MOTION LIMIT POST', 'LEFT ROTATION MOTION LIMIT POST', 'LEFT KEMPS', 'RIGHT KEMPS', "FABER Patrick's TEST LEFT", "FABER Patrick's TEST RIGHT", 'Passive SLR LEFT', 'Passive SLR RIGHT', 'SLR DEGREES LEFT', 'SLR DEGREES RIGHT', 'SENSORY LEFT L4 POST', 'SENSORY RIGHT L4 POST', 'SENSORY LEFT L5 POST', 'SENSORY RIGHT L5 POST', 'SENSORY LEFT S1 POST', 'SENSORY RIGHT S1 POST', 'MOTOR LEFT L1-3 POST', 'MOTOR RIGHT L1-3 POST', 'MOTOR LEFT L4 POST', 'MOTOR RIGHT L4 POST', 'MOTOR LEFT L5 POST', 'MOTOR RIGHT  L5 POST', 'MOTOR LEFT S1 POST', 'MOTOR RIGHT S1 POST', 'DTR LEFT L4 POST', 'DTR RIGHT L4 POST', 'DTR LEFT S1 POST', 'DTR RIGHT S1 POST']
+[2026-08-14 01:33:40] [00_import_raw] Merged data shape: (160, 86)
+[2026-08-14 01:33:40] [00_import_raw] Merged columns (86):
+[2026-08-14 01:33:40] [00_import_raw]   Patient ID#
+[2026-08-14 01:33:40] [00_import_raw]   Sex_PRE
+[2026-08-14 01:33:40] [00_import_raw]   D.O.B Dd/Mm/YYyy_PRE
+[2026-08-14 01:33:40] [00_import_raw]   Complaint_PRE
+[2026-08-14 01:33:40] [00_import_raw]   VAS PRE
+[2026-08-14 01:33:40] [00_import_raw]   FLEXION MOTION LIMIT PRE
+[2026-08-14 01:33:40] [00_import_raw]   FLEXION PAIN LEVEL PRE
+[2026-08-14 01:33:40] [00_import_raw]   EXTENSION MOTION LIMIT PRE
+[2026-08-14 01:33:40] [00_import_raw]   EXTENSION PAIN LEVEL PRE
+[2026-08-14 01:33:40] [00_import_raw]   RIGHT LATERAL FLEXION MOTION LIMIT PRE
+[2026-08-14 01:33:40] [00_import_raw]   RIGHT LATERAL FLEXION PAIN LEVEL PRE
+[2026-08-14 01:33:40] [00_import_raw]   LEFT LATERAL FLEXION MOTION LIMIT PRE
+[2026-08-14 01:33:40] [00_import_raw]   LEFT LATERAL FLEXION PAIN LEVEL PRE
+[2026-08-14 01:33:40] [00_import_raw]   RIGHT ROTATION MOTION LIMIT PRE
+[2026-08-14 01:33:40] [00_import_raw]   RIGHT ROTATION PAIN LEVEL PRE
+[2026-08-14 01:33:40] [00_import_raw]   LEFT ROTATION MOTION LIMIT PRE
+[2026-08-14 01:33:40] [00_import_raw]   LEFT ROTATION PAIN LEVEL PRE
+[2026-08-14 01:33:40] [00_import_raw]   LEFT KEMPS_PRE
+[2026-08-14 01:33:40] [00_import_raw]   RIGHT KEMPS_PRE
+[2026-08-14 01:33:40] [00_import_raw]   FABER Patrick's TEST LEFT_PRE
+[2026-08-14 01:33:40] [00_import_raw]   FABER Patrick's TEST RIGHT_PRE
+[2026-08-14 01:33:40] [00_import_raw]   Passive SLR LEFT_PRE
+[2026-08-14 01:33:40] [00_import_raw]   Passive SLR RIGHT_PRE
+[2026-08-14 01:33:40] [00_import_raw]   SLR DEGREES LEFT_PRE
+[2026-08-14 01:33:40] [00_import_raw]   SLR DEGREES RIGHT_PRE
+[2026-08-14 01:33:40] [00_import_raw]   SENSORY LEFT L4 PRE
+[2026-08-14 01:33:40] [00_import_raw]   SENSORY RIGHT L4 PRE
+[2026-08-14 01:33:40] [00_import_raw]   SENSORY LEFT L5 PRE
+[2026-08-14 01:33:40] [00_import_raw]   SENSORY RIGHT L5 PRE
+[2026-08-14 01:33:40] [00_import_raw]   SENSORY LEFT S1 PRE
+[2026-08-14 01:33:40] [00_import_raw]   SENSORY RIGHT S1 PRE
+[2026-08-14 01:33:40] [00_import_raw]   MOTOR LEFT L1-3 PRE
+[2026-08-14 01:33:40] [00_import_raw]   MOTOR RIGHT L1-3 PRE
+[2026-08-14 01:33:40] [00_import_raw]   MOTOR LEFT L4 PRE
+[2026-08-14 01:33:40] [00_import_raw]   MOTOR RIGHT L4 PRE
+[2026-08-14 01:33:40] [00_import_raw]   MOTOR LEFT L5 PRE
+[2026-08-14 01:33:40] [00_import_raw]   MOTOR RIGHT  L5 PRE
+[2026-08-14 01:33:40] [00_import_raw]   MOTOR LEFT S1 PRE
+[2026-08-14 01:33:40] [00_import_raw]   MOTOR RIGHT S1 PRE
+[2026-08-14 01:33:40] [00_import_raw]   DTR LEFT L4 PRE
+[2026-08-14 01:33:40] [00_import_raw]   DTR RIGHT L4 PRE
+[2026-08-14 01:33:40] [00_import_raw]   DTR LEFT S1 PRE
+[2026-08-14 01:33:40] [00_import_raw]   DTR RIGHT S1 PRE
+[2026-08-14 01:33:40] [00_import_raw]   
+[2026-08-14 01:33:40] [00_import_raw]   Sex_POST
+[2026-08-14 01:33:40] [00_import_raw]   D.O.B Dd/Mm/YYyy_POST
+[2026-08-14 01:33:40] [00_import_raw]   Complaint_POST
+[2026-08-14 01:33:40] [00_import_raw]   VAS POST
+[2026-08-14 01:33:40] [00_import_raw]   FLEXION MOTION LIMIT POST
+[2026-08-14 01:33:40] [00_import_raw]   FLEXION PAIN LEVEL POST
+[2026-08-14 01:33:40] [00_import_raw]   EXTENSION MOTION LIMIT POST
+[2026-08-14 01:33:40] [00_import_raw]   EXTENSION PAIN LEVEL POST
+[2026-08-14 01:33:40] [00_import_raw]   RIGHT LATERAL FLEXION MOTION LIMIT POST
+[2026-08-14 01:33:40] [00_import_raw]   RIGHT LATERAL FLEXION PAIN LEVEL POST
+[2026-08-14 01:33:40] [00_import_raw]   LEFT LATERAL FLEXION MOTION LIMIT POST
+[2026-08-14 01:33:40] [00_import_raw]   LEFT LATERAL FLEXION PAIN LEVEL POST
+[2026-08-14 01:33:40] [00_import_raw]   RIGHT ROTATION MOTION LIMIT POST
+[2026-08-14 01:33:40] [00_import_raw]   RIGHT ROTATION PAIN LEVEL POST
+[2026-08-14 01:33:40] [00_import_raw]   LEFT ROTATION MOTION LIMIT POST
+[2026-08-14 01:33:40] [00_import_raw]   LEFT ROTATION PAIN LEVEL POST
+[2026-08-14 01:33:40] [00_import_raw]   LEFT KEMPS_POST
+[2026-08-14 01:33:40] [00_import_raw]   RIGHT KEMPS_POST
+[2026-08-14 01:33:40] [00_import_raw]   FABER Patrick's TEST LEFT_POST
+[2026-08-14 01:33:40] [00_import_raw]   FABER Patrick's TEST RIGHT_POST
+[2026-08-14 01:33:40] [00_import_raw]   Passive SLR LEFT_POST
+[2026-08-14 01:33:40] [00_import_raw]   Passive SLR RIGHT_POST
+[2026-08-14 01:33:40] [00_import_raw]   SLR DEGREES LEFT_POST
+[2026-08-14 01:33:40] [00_import_raw]   SLR DEGREES RIGHT_POST
+[2026-08-14 01:33:40] [00_import_raw]   SENSORY LEFT L4 POST
+[2026-08-14 01:33:40] [00_import_raw]   SENSORY RIGHT L4 POST
+[2026-08-14 01:33:40] [00_import_raw]   SENSORY LEFT L5 POST
+[2026-08-14 01:33:40] [00_import_raw]   SENSORY RIGHT L5 POST
+[2026-08-14 01:33:40] [00_import_raw]   SENSORY LEFT S1 POST
+[2026-08-14 01:33:40] [00_import_raw]   SENSORY RIGHT S1 POST
+[2026-08-14 01:33:40] [00_import_raw]   MOTOR LEFT L1-3 POST
+[2026-08-14 01:33:40] [00_import_raw]   MOTOR RIGHT L1-3 POST
+[2026-08-14 01:33:40] [00_import_raw]   MOTOR LEFT L4 POST
+[2026-08-14 01:33:40] [00_import_raw]   MOTOR RIGHT L4 POST
+[2026-08-14 01:33:40] [00_import_raw]   MOTOR LEFT L5 POST
+[2026-08-14 01:33:40] [00_import_raw]   MOTOR RIGHT  L5 POST
+[2026-08-14 01:33:40] [00_import_raw]   MOTOR LEFT S1 POST
+[2026-08-14 01:33:40] [00_import_raw]   MOTOR RIGHT S1 POST
+[2026-08-14 01:33:40] [00_import_raw]   DTR LEFT L4 POST
+[2026-08-14 01:33:40] [00_import_raw]   DTR RIGHT L4 POST
+[2026-08-14 01:33:40] [00_import_raw]   DTR LEFT S1 POST
+[2026-08-14 01:33:40] [00_import_raw]   DTR RIGHT S1 POST
+[2026-08-14 01:33:40] [00_import_raw] 
+Raw merged data saved to ../data/raw_merged.csv with 160 patients.
+[2026-08-14 01:33:40] [01_preprocess] Condition variable retained for descriptive reference only.
+[2026-08-14 01:33:40] [01_preprocess] Unique complaints: 67
+[2026-08-14 01:33:40] [01_preprocess] 
+[2026-08-14 01:33:40] [01_preprocess] VAS PRE missing before fill: 7
+[2026-08-14 01:33:40] [01_preprocess] VAS POST missing before fill: 17
+[2026-08-14 01:33:40] [01_preprocess] VAS PRE missing after fill: 0
+[2026-08-14 01:33:40] [01_preprocess] VAS POST missing after fill: 0
+[2026-08-14 01:33:40] [01_preprocess] clinical_data.csv saved with 160 patients and 66 columns.
+[2026-08-14 01:33:40] [01_preprocess] 
+[2026-08-14 01:33:40] [01_preprocess] Derived variables summary:
+[2026-08-14 01:33:40] [01_preprocess]   maxpain_pre:  {'MOD': 49, 'SEVERE': 37, 'MILD': 33, 'NONE': 16}
+[2026-08-14 01:33:40] [01_preprocess]   maxpain_post: {'NONE': 70, 'MILD': 46, 'MOD': 17, 'SEVERE': 4}
+[2026-08-14 01:33:40] [01_preprocess]   neuro_def_pre:  {1: 108, 0: 52}
+[2026-08-14 01:33:40] [01_preprocess]   neuro_def_post: {0: 80, 1: 80}
+[2026-08-14 01:33:40] [01_preprocess]   surgical_candidate: {1: 138, 0: 22}
+[2026-08-14 01:33:40] [01_preprocess]   success: {0: 96, 1: 64}
+[2026-08-14 01:33:41] [02_descriptive_stats] === DEMOGRAPHICS ===
+[2026-08-14 01:33:41] [02_descriptive_stats] Total patients: 160
+[2026-08-14 01:33:41] [02_descriptive_stats] Age: mean=59.9, SD=17.1, range=17.0-93.0
+[2026-08-14 01:33:41] [02_descriptive_stats] 
+=== CONDITION DISTRIBUTION ===
+[2026-08-14 01:33:41] [02_descriptive_stats] condition_raw
+LOW BACK PAIN                    53
+LOWER BACK PAIN                  18
+LOW BACK PAIN WITH SCIATICA       8
+SCIATICA                          5
+(INSUFFICIENT DATA AVAILABLE)     5
+                                 ..
+HIPAND BACK PAIN                  1
+JOINT MUSCLE PAIN                 1
+PINCHED NERVE LOWER BACK PAIN     1
+BUTTOCKS PAIN                     1
+KNEE PAIN                         1
+Name: count, Length: 67, dtype: int64
+[2026-08-14 01:33:41] [02_descriptive_stats] 
+=== BASELINE VAS ===
+[2026-08-14 01:33:41] [02_descriptive_stats] VAS PRE: mean=6.9, SD=2.4
+[2026-08-14 01:33:41] [02_descriptive_stats] VAS POST: mean=2.2, SD=2.5
+[2026-08-14 01:33:41] [02_descriptive_stats] 
+=== SURGICAL CANDIDATES ===
+[2026-08-14 01:33:41] [02_descriptive_stats] surgical_candidate
+1    138
+0     22
+Name: count, dtype: int64
+[2026-08-14 01:33:41] [02_descriptive_stats] 
+=== COMPOSITE SUCCESS ===
+[2026-08-14 01:33:41] [02_descriptive_stats] success
+0    96
+1    64
+Name: count, dtype: int64
+[2026-08-14 01:33:41] [02_descriptive_stats] 
+=== NEUROLOGICAL DEFICIT ===
+[2026-08-14 01:33:41] [02_descriptive_stats] PRE: {1: 108, 0: 52}
+[2026-08-14 01:33:41] [02_descriptive_stats] POST: {0: 80, 1: 80}
+[2026-08-14 01:33:42] [02_eda] === EXPLORATORY DATA ANALYSIS ===
+[2026-08-14 01:33:42] [02_eda] Total patients: 160
+[2026-08-14 01:33:42] [02_eda] Figure 1 saved: Age distribution histogram
+[2026-08-14 01:33:42] [02_eda]   Mean age: 59.9 (SD=17.1)
+[2026-08-14 01:33:42] [02_eda]   Range: 17–93
+[2026-08-14 01:33:42] [02_eda] Figure 2 saved: Pre/Post VAS distributions
+[2026-08-14 01:33:42] [02_eda]   Pre-treatment VAS: mean=6.9, SD=2.4
+[2026-08-14 01:33:42] [02_eda]   Post-treatment VAS: mean=2.2, SD=2.5
+[2026-08-14 01:33:42] [02_eda] Figure 3 saved: VAS change box plot
+[2026-08-14 01:33:42] [02_eda]   Mean VAS reduction: 4.7 (SD=2.8)
+[2026-08-14 01:33:42] [02_eda]   Median reduction: 5.0
+[2026-08-14 01:33:42] [02_eda] Figure 4 saved: MCID=129/160 (80.6%), SCB=113/160 (70.6%)
+[2026-08-14 01:33:43] [02_eda] Figure 5 saved: Surgical candidates=138, Composite success=64
+[2026-08-14 01:33:43] [02_eda] Figure 6 saved: Surgical candidate success rate = 52/138 (37.7%)
+[2026-08-14 01:33:43] [02_eda] Figure 7 saved: Neuro deficit PRE={1: 108, 0: 52}, POST={0: 80, 1: 80}
+[2026-08-14 01:33:43] [02_eda] Figure 8 saved: Max pain shift from pre to post
+[2026-08-14 01:33:43] [02_eda] 
+[2026-08-14 01:33:43] [02_eda] === EDA COMPLETE ===
+[2026-08-14 01:33:43] [02_eda] Figures saved in output/figures/
+[2026-08-14 01:33:43] [02_eda] 
+[2026-08-14 01:33:43] [02_eda] Key findings:
+[2026-08-14 01:33:43] [02_eda]   1. Mean VAS reduction: 4.7 points (Cohen's d ≈ 1.65)
+[2026-08-14 01:33:43] [02_eda]   2. 80.6% achieved MCID; 70.6% achieved SCB
+[2026-08-14 01:33:43] [02_eda]   3. 86.2% are surgical candidates
+[2026-08-14 01:33:43] [02_eda]   4. Composite success rate: 40.0% overall; 37.7% among surgical candidates
+[2026-08-14 01:33:43] [02_eda]   5. Neurological deficit: 108 pre → 80 post
+[2026-08-14 01:33:43] [03_rq1_vas_change] Paired t-test: t=20.872, p=0.0000
+[2026-08-14 01:33:43] [03_rq1_vas_change] Wilcoxon: W=21.0, p=0.0000
+[2026-08-14 01:33:43] [03_rq1_vas_change] Cohen's d: 1.65
+[2026-08-14 01:33:43] [03_rq1_vas_change] MCID (>=30%): 129/160 = 80.6%
+[2026-08-14 01:33:43] [03_rq1_vas_change] SCB (>=50%): 113/160 = 70.6%
+[2026-08-14 01:33:44] [04_rq2_success_benchmark] Surgical candidates: 138
+[2026-08-14 01:33:44] [04_rq2_success_benchmark] Composite success: 52/138 = 37.7%
+[2026-08-14 01:33:44] [04_rq2_success_benchmark] 95% CI (Clopper-Pearson): [29.6%, 46.3%]
+[2026-08-14 01:33:44] [04_rq2_success_benchmark] One-sample z-test vs 75%: z=-10.124, p=1.0000 (one-tailed)
+[2026-08-14 01:33:45] [05_rq3] === RQ3: LOGISTIC REGRESSION ===
+[2026-08-14 01:33:45] [05_rq3] Features (condition excluded due to low variability): ['age', 'vas_pre', 'maxlimit_num', 'neuro_def_pre']
+[2026-08-14 01:33:45] [05_rq3] Intercept: -0.4389
+[2026-08-14 01:33:45] [05_rq3]   age: coef=-0.0736, OR=0.9290
+[2026-08-14 01:33:45] [05_rq3]   vas_pre: coef=0.1784, OR=1.1953
+[2026-08-14 01:33:45] [05_rq3]   maxlimit_num: coef=-0.3745, OR=0.6876
+[2026-08-14 01:33:45] [05_rq3]   neuro_def_pre: coef=-0.2201, OR=0.8024
+[2026-08-14 01:33:45] [05_rq3] Training accuracy: 0.649
+[2026-08-14 01:33:45] [05_rq3] Note: Full inferential statistics (p-values, CI) require larger sample size.
+[2026-08-14 01:33:45] [05_rq3] The condition variable was excluded due to insufficient variability
+[2026-08-14 01:33:45] [05_rq3] (96.7% of patients presented with disc herniation-related complaints).
+[2026-08-14 01:33:45] [05_rq3] This model structure will scale to N=160.
+[2026-08-14 01:36:18] [00_import_raw] PRE columns: ['Patient ID#', 'Sex', 'D.O.B Dd/Mm/YYyy', 'Complaint', 'VAS PRE', 'FLEXION MOTION LIMIT PRE', 'FLEXION PAIN LEVEL PRE', 'EXTENSION MOTION LIMIT PRE', 'EXTENSION PAIN LEVEL PRE', 'RIGHT LATERAL FLEXION MOTION LIMIT PRE', 'RIGHT LATERAL FLEXION PAIN LEVEL PRE', 'LEFT LATERAL FLEXION MOTION LIMIT PRE', 'LEFT LATERAL FLEXION PAIN LEVEL PRE', 'RIGHT ROTATION MOTION LIMIT PRE', 'RIGHT ROTATION PAIN LEVEL PRE', 'LEFT ROTATION MOTION LIMIT PRE', 'LEFT ROTATION PAIN LEVEL PRE', 'LEFT KEMPS', 'RIGHT KEMPS', "FABER Patrick's TEST LEFT", "FABER Patrick's TEST RIGHT", 'Passive SLR LEFT', 'Passive SLR RIGHT', 'SLR DEGREES LEFT', 'SLR DEGREES RIGHT', 'SENSORY LEFT L4 PRE', 'SENSORY RIGHT L4 PRE', 'SENSORY LEFT L5 PRE', 'SENSORY RIGHT L5 PRE', 'SENSORY LEFT S1 PRE', 'SENSORY RIGHT S1 PRE', 'MOTOR LEFT L1-3 PRE', 'MOTOR RIGHT L1-3 PRE', 'MOTOR LEFT L4 PRE', 'MOTOR RIGHT L4 PRE', 'MOTOR LEFT L5 PRE', 'MOTOR RIGHT  L5 PRE', 'MOTOR LEFT S1 PRE', 'MOTOR RIGHT S1 PRE', 'DTR LEFT L4 PRE', 'DTR RIGHT L4 PRE', 'DTR LEFT S1 PRE', 'DTR RIGHT S1 PRE']
+[2026-08-14 01:36:18] [00_import_raw] POST columns: ['', 'Patient ID#', 'Sex', 'D.O.B Dd/Mm/YYyy', 'Complaint', 'VAS POST', 'FLEXION MOTION LIMIT POST', 'FLEXION PAIN LEVEL POST', 'EXTENSION MOTION LIMIT POST', 'EXTENSION PAIN LEVEL POST', 'RIGHT LATERAL FLEXION MOTION LIMIT POST', 'RIGHT LATERAL FLEXION PAIN LEVEL POST', 'LEFT LATERAL FLEXION MOTION LIMIT POST', 'LEFT LATERAL FLEXION PAIN LEVEL POST', 'RIGHT ROTATION MOTION LIMIT POST', 'RIGHT ROTATION PAIN LEVEL POST', 'LEFT ROTATION MOTION LIMIT POST', 'LEFT ROTATION MOTION LIMIT POST', 'LEFT KEMPS', 'RIGHT KEMPS', "FABER Patrick's TEST LEFT", "FABER Patrick's TEST RIGHT", 'Passive SLR LEFT', 'Passive SLR RIGHT', 'SLR DEGREES LEFT', 'SLR DEGREES RIGHT', 'SENSORY LEFT L4 POST', 'SENSORY RIGHT L4 POST', 'SENSORY LEFT L5 POST', 'SENSORY RIGHT L5 POST', 'SENSORY LEFT S1 POST', 'SENSORY RIGHT S1 POST', 'MOTOR LEFT L1-3 POST', 'MOTOR RIGHT L1-3 POST', 'MOTOR LEFT L4 POST', 'MOTOR RIGHT L4 POST', 'MOTOR LEFT L5 POST', 'MOTOR RIGHT  L5 POST', 'MOTOR LEFT S1 POST', 'MOTOR RIGHT S1 POST', 'DTR LEFT L4 POST', 'DTR RIGHT L4 POST', 'DTR LEFT S1 POST', 'DTR RIGHT S1 POST']
+[2026-08-14 01:36:18] [00_import_raw] Merged data shape: (160, 86)
+[2026-08-14 01:36:18] [00_import_raw] Merged columns (86):
+[2026-08-14 01:36:18] [00_import_raw]   Patient ID#
+[2026-08-14 01:36:18] [00_import_raw]   Sex_PRE
+[2026-08-14 01:36:18] [00_import_raw]   D.O.B Dd/Mm/YYyy_PRE
+[2026-08-14 01:36:18] [00_import_raw]   Complaint_PRE
+[2026-08-14 01:36:18] [00_import_raw]   VAS PRE
+[2026-08-14 01:36:18] [00_import_raw]   FLEXION MOTION LIMIT PRE
+[2026-08-14 01:36:18] [00_import_raw]   FLEXION PAIN LEVEL PRE
+[2026-08-14 01:36:18] [00_import_raw]   EXTENSION MOTION LIMIT PRE
+[2026-08-14 01:36:18] [00_import_raw]   EXTENSION PAIN LEVEL PRE
+[2026-08-14 01:36:18] [00_import_raw]   RIGHT LATERAL FLEXION MOTION LIMIT PRE
+[2026-08-14 01:36:18] [00_import_raw]   RIGHT LATERAL FLEXION PAIN LEVEL PRE
+[2026-08-14 01:36:18] [00_import_raw]   LEFT LATERAL FLEXION MOTION LIMIT PRE
+[2026-08-14 01:36:18] [00_import_raw]   LEFT LATERAL FLEXION PAIN LEVEL PRE
+[2026-08-14 01:36:18] [00_import_raw]   RIGHT ROTATION MOTION LIMIT PRE
+[2026-08-14 01:36:18] [00_import_raw]   RIGHT ROTATION PAIN LEVEL PRE
+[2026-08-14 01:36:18] [00_import_raw]   LEFT ROTATION MOTION LIMIT PRE
+[2026-08-14 01:36:18] [00_import_raw]   LEFT ROTATION PAIN LEVEL PRE
+[2026-08-14 01:36:18] [00_import_raw]   LEFT KEMPS_PRE
+[2026-08-14 01:36:18] [00_import_raw]   RIGHT KEMPS_PRE
+[2026-08-14 01:36:18] [00_import_raw]   FABER Patrick's TEST LEFT_PRE
+[2026-08-14 01:36:18] [00_import_raw]   FABER Patrick's TEST RIGHT_PRE
+[2026-08-14 01:36:18] [00_import_raw]   Passive SLR LEFT_PRE
+[2026-08-14 01:36:18] [00_import_raw]   Passive SLR RIGHT_PRE
+[2026-08-14 01:36:18] [00_import_raw]   SLR DEGREES LEFT_PRE
+[2026-08-14 01:36:18] [00_import_raw]   SLR DEGREES RIGHT_PRE
+[2026-08-14 01:36:18] [00_import_raw]   SENSORY LEFT L4 PRE
+[2026-08-14 01:36:18] [00_import_raw]   SENSORY RIGHT L4 PRE
+[2026-08-14 01:36:18] [00_import_raw]   SENSORY LEFT L5 PRE
+[2026-08-14 01:36:18] [00_import_raw]   SENSORY RIGHT L5 PRE
+[2026-08-14 01:36:18] [00_import_raw]   SENSORY LEFT S1 PRE
+[2026-08-14 01:36:18] [00_import_raw]   SENSORY RIGHT S1 PRE
+[2026-08-14 01:36:18] [00_import_raw]   MOTOR LEFT L1-3 PRE
+[2026-08-14 01:36:18] [00_import_raw]   MOTOR RIGHT L1-3 PRE
+[2026-08-14 01:36:18] [00_import_raw]   MOTOR LEFT L4 PRE
+[2026-08-14 01:36:18] [00_import_raw]   MOTOR RIGHT L4 PRE
+[2026-08-14 01:36:18] [00_import_raw]   MOTOR LEFT L5 PRE
+[2026-08-14 01:36:18] [00_import_raw]   MOTOR RIGHT  L5 PRE
+[2026-08-14 01:36:18] [00_import_raw]   MOTOR LEFT S1 PRE
+[2026-08-14 01:36:18] [00_import_raw]   MOTOR RIGHT S1 PRE
+[2026-08-14 01:36:18] [00_import_raw]   DTR LEFT L4 PRE
+[2026-08-14 01:36:18] [00_import_raw]   DTR RIGHT L4 PRE
+[2026-08-14 01:36:18] [00_import_raw]   DTR LEFT S1 PRE
+[2026-08-14 01:36:18] [00_import_raw]   DTR RIGHT S1 PRE
+[2026-08-14 01:36:18] [00_import_raw]   
+[2026-08-14 01:36:18] [00_import_raw]   Sex_POST
+[2026-08-14 01:36:18] [00_import_raw]   D.O.B Dd/Mm/YYyy_POST
+[2026-08-14 01:36:18] [00_import_raw]   Complaint_POST
+[2026-08-14 01:36:18] [00_import_raw]   VAS POST
+[2026-08-14 01:36:18] [00_import_raw]   FLEXION MOTION LIMIT POST
+[2026-08-14 01:36:18] [00_import_raw]   FLEXION PAIN LEVEL POST
+[2026-08-14 01:36:18] [00_import_raw]   EXTENSION MOTION LIMIT POST
+[2026-08-14 01:36:18] [00_import_raw]   EXTENSION PAIN LEVEL POST
+[2026-08-14 01:36:18] [00_import_raw]   RIGHT LATERAL FLEXION MOTION LIMIT POST
+[2026-08-14 01:36:18] [00_import_raw]   RIGHT LATERAL FLEXION PAIN LEVEL POST
+[2026-08-14 01:36:18] [00_import_raw]   LEFT LATERAL FLEXION MOTION LIMIT POST
+[2026-08-14 01:36:18] [00_import_raw]   LEFT LATERAL FLEXION PAIN LEVEL POST
+[2026-08-14 01:36:18] [00_import_raw]   RIGHT ROTATION MOTION LIMIT POST
+[2026-08-14 01:36:18] [00_import_raw]   RIGHT ROTATION PAIN LEVEL POST
+[2026-08-14 01:36:18] [00_import_raw]   LEFT ROTATION MOTION LIMIT POST
+[2026-08-14 01:36:18] [00_import_raw]   LEFT ROTATION PAIN LEVEL POST
+[2026-08-14 01:36:18] [00_import_raw]   LEFT KEMPS_POST
+[2026-08-14 01:36:18] [00_import_raw]   RIGHT KEMPS_POST
+[2026-08-14 01:36:18] [00_import_raw]   FABER Patrick's TEST LEFT_POST
+[2026-08-14 01:36:18] [00_import_raw]   FABER Patrick's TEST RIGHT_POST
+[2026-08-14 01:36:18] [00_import_raw]   Passive SLR LEFT_POST
+[2026-08-14 01:36:18] [00_import_raw]   Passive SLR RIGHT_POST
+[2026-08-14 01:36:18] [00_import_raw]   SLR DEGREES LEFT_POST
+[2026-08-14 01:36:18] [00_import_raw]   SLR DEGREES RIGHT_POST
+[2026-08-14 01:36:18] [00_import_raw]   SENSORY LEFT L4 POST
+[2026-08-14 01:36:18] [00_import_raw]   SENSORY RIGHT L4 POST
+[2026-08-14 01:36:18] [00_import_raw]   SENSORY LEFT L5 POST
+[2026-08-14 01:36:18] [00_import_raw]   SENSORY RIGHT L5 POST
+[2026-08-14 01:36:18] [00_import_raw]   SENSORY LEFT S1 POST
+[2026-08-14 01:36:18] [00_import_raw]   SENSORY RIGHT S1 POST
+[2026-08-14 01:36:18] [00_import_raw]   MOTOR LEFT L1-3 POST
+[2026-08-14 01:36:18] [00_import_raw]   MOTOR RIGHT L1-3 POST
+[2026-08-14 01:36:18] [00_import_raw]   MOTOR LEFT L4 POST
+[2026-08-14 01:36:18] [00_import_raw]   MOTOR RIGHT L4 POST
+[2026-08-14 01:36:18] [00_import_raw]   MOTOR LEFT L5 POST
+[2026-08-14 01:36:18] [00_import_raw]   MOTOR RIGHT  L5 POST
+[2026-08-14 01:36:18] [00_import_raw]   MOTOR LEFT S1 POST
+[2026-08-14 01:36:18] [00_import_raw]   MOTOR RIGHT S1 POST
+[2026-08-14 01:36:18] [00_import_raw]   DTR LEFT L4 POST
+[2026-08-14 01:36:18] [00_import_raw]   DTR RIGHT L4 POST
+[2026-08-14 01:36:18] [00_import_raw]   DTR LEFT S1 POST
+[2026-08-14 01:36:18] [00_import_raw]   DTR RIGHT S1 POST
+[2026-08-14 01:36:18] [00_import_raw] 
+Raw merged data saved to ../data/raw_merged.csv with 160 patients.
+[2026-08-14 01:36:18] [01_preprocess] Condition variable retained for descriptive reference only.
+[2026-08-14 01:36:18] [01_preprocess] Unique complaints: 67
+[2026-08-14 01:36:18] [01_preprocess] 
+[2026-08-14 01:36:18] [01_preprocess] VAS PRE missing before fill: 7
+[2026-08-14 01:36:18] [01_preprocess] VAS POST missing before fill: 17
+[2026-08-14 01:36:18] [01_preprocess] VAS PRE missing after fill: 0
+[2026-08-14 01:36:18] [01_preprocess] VAS POST missing after fill: 0
+[2026-08-14 01:36:19] [01_preprocess] clinical_data.csv saved with 160 patients and 66 columns.
+[2026-08-14 01:36:19] [01_preprocess] 
+[2026-08-14 01:36:19] [01_preprocess] Derived variables summary:
+[2026-08-14 01:36:19] [01_preprocess]   maxpain_pre:  {'MOD': 49, 'SEVERE': 37, 'MILD': 33, 'NONE': 16}
+[2026-08-14 01:36:19] [01_preprocess]   maxpain_post: {'NONE': 70, 'MILD': 46, 'MOD': 17, 'SEVERE': 4}
+[2026-08-14 01:36:19] [01_preprocess]   neuro_def_pre:  {1: 108, 0: 52}
+[2026-08-14 01:36:19] [01_preprocess]   neuro_def_post: {0: 80, 1: 80}
+[2026-08-14 01:36:19] [01_preprocess]   surgical_candidate: {1: 138, 0: 22}
+[2026-08-14 01:36:19] [01_preprocess]   success: {0: 96, 1: 64}
+[2026-08-14 01:36:19] [02_descriptive_stats] === DEMOGRAPHICS ===
+[2026-08-14 01:36:19] [02_descriptive_stats] Total patients: 160
+[2026-08-14 01:36:19] [02_descriptive_stats] Age: mean=59.9, SD=17.1, range=17.0-93.0
+[2026-08-14 01:36:19] [02_descriptive_stats] 
+=== CONDITION DISTRIBUTION ===
+[2026-08-14 01:36:19] [02_descriptive_stats] condition_raw
+LOW BACK PAIN                    53
+LOWER BACK PAIN                  18
+LOW BACK PAIN WITH SCIATICA       8
+SCIATICA                          5
+(INSUFFICIENT DATA AVAILABLE)     5
+                                 ..
+HIPAND BACK PAIN                  1
+JOINT MUSCLE PAIN                 1
+PINCHED NERVE LOWER BACK PAIN     1
+BUTTOCKS PAIN                     1
+KNEE PAIN                         1
+Name: count, Length: 67, dtype: int64
+[2026-08-14 01:36:19] [02_descriptive_stats] 
+=== BASELINE VAS ===
+[2026-08-14 01:36:19] [02_descriptive_stats] VAS PRE: mean=6.9, SD=2.4
+[2026-08-14 01:36:19] [02_descriptive_stats] VAS POST: mean=2.2, SD=2.5
+[2026-08-14 01:36:19] [02_descriptive_stats] 
+=== SURGICAL CANDIDATES ===
+[2026-08-14 01:36:19] [02_descriptive_stats] surgical_candidate
+1    138
+0     22
+Name: count, dtype: int64
+[2026-08-14 01:36:19] [02_descriptive_stats] 
+=== COMPOSITE SUCCESS ===
+[2026-08-14 01:36:19] [02_descriptive_stats] success
+0    96
+1    64
+Name: count, dtype: int64
+[2026-08-14 01:36:19] [02_descriptive_stats] 
+=== NEUROLOGICAL DEFICIT ===
+[2026-08-14 01:36:19] [02_descriptive_stats] PRE: {1: 108, 0: 52}
+[2026-08-14 01:36:19] [02_descriptive_stats] POST: {0: 80, 1: 80}
+[2026-08-14 01:36:20] [02_eda] === EXPLORATORY DATA ANALYSIS ===
+[2026-08-14 01:36:20] [02_eda] Total patients: 160
+[2026-08-14 01:36:20] [02_eda] Figure 1 saved: Age distribution histogram
+[2026-08-14 01:36:20] [02_eda]   Mean age: 59.9 (SD=17.1)
+[2026-08-14 01:36:20] [02_eda]   Range: 17–93
+[2026-08-14 01:36:20] [02_eda] Figure 2 saved: Pre/Post VAS distributions
+[2026-08-14 01:36:20] [02_eda]   Pre-treatment VAS: mean=6.9, SD=2.4
+[2026-08-14 01:36:20] [02_eda]   Post-treatment VAS: mean=2.2, SD=2.5
+[2026-08-14 01:36:20] [02_eda] Figure 3 saved: VAS change box plot
+[2026-08-14 01:36:20] [02_eda]   Mean VAS reduction: 4.7 (SD=2.8)
+[2026-08-14 01:36:20] [02_eda]   Median reduction: 5.0
+[2026-08-14 01:36:20] [02_eda] Figure 4 saved: MCID=129/160 (80.6%), SCB=113/160 (70.6%)
+[2026-08-14 01:36:21] [02_eda] Figure 5 saved: Surgical candidates=138, Composite success=64
+[2026-08-14 01:36:21] [02_eda] Figure 6 saved: Surgical candidate success rate = 52/138 (37.7%)
+[2026-08-14 01:36:21] [02_eda] Figure 7 saved: Neuro deficit PRE={1: 108, 0: 52}, POST={0: 80, 1: 80}
+[2026-08-14 01:36:21] [02_eda] Figure 8 saved: Max pain shift from pre to post
+[2026-08-14 01:36:21] [02_eda] 
+[2026-08-14 01:36:21] [02_eda] === EDA COMPLETE ===
+[2026-08-14 01:36:21] [02_eda] Figures saved in output/figures/
+[2026-08-14 01:36:21] [02_eda] 
+[2026-08-14 01:36:21] [02_eda] Key findings:
+[2026-08-14 01:36:21] [02_eda]   1. Mean VAS reduction: 4.7 points (Cohen's d ≈ 1.65)
+[2026-08-14 01:36:21] [02_eda]   2. 80.6% achieved MCID; 70.6% achieved SCB
+[2026-08-14 01:36:21] [02_eda]   3. 86.2% are surgical candidates
+[2026-08-14 01:36:21] [02_eda]   4. Composite success rate: 40.0% overall; 37.7% among surgical candidates
+[2026-08-14 01:36:21] [02_eda]   5. Neurological deficit: 108 pre → 80 post
+[2026-08-14 01:36:22] [03_rq1_vas_change] Paired t-test: t=20.872, p=0.0000
+[2026-08-14 01:36:22] [03_rq1_vas_change] Wilcoxon: W=21.0, p=0.0000
+[2026-08-14 01:36:22] [03_rq1_vas_change] Cohen's d: 1.65
+[2026-08-14 01:36:22] [03_rq1_vas_change] MCID (>=30%): 129/160 = 80.6%
+[2026-08-14 01:36:22] [03_rq1_vas_change] SCB (>=50%): 113/160 = 70.6%
+[2026-08-14 01:36:22] [04_rq2_success_benchmark] Surgical candidates: 138
+[2026-08-14 01:36:22] [04_rq2_success_benchmark] Composite success: 52/138 = 37.7%
+[2026-08-14 01:36:22] [04_rq2_success_benchmark] 95% CI (Clopper-Pearson): [29.6%, 46.3%]
+[2026-08-14 01:36:22] [04_rq2_success_benchmark] One-sample z-test vs 75%: z=-10.124, p=1.0000 (one-tailed)
+[2026-08-14 01:36:23] [05_rq3] === RQ3: LOGISTIC REGRESSION WITH INFERENTIAL STATISTICS ===
+[2026-08-14 01:36:23] [05_rq3] Features (condition excluded due to low variability): ['age', 'vas_pre', 'maxlimit_num', 'neuro_def_pre']
+[2026-08-14 01:36:23] [05_rq3] Training accuracy: 0.6489
+[2026-08-14 01:36:23] [05_rq3] 
+[2026-08-14 01:36:23] [05_rq3] Predictor                       β         SE          z          p         OR               95% CI
+[2026-08-14 01:36:23] [05_rq3] ------------------------------------------------------------------------------------------
+[2026-08-14 01:36:23] [05_rq3] Intercept                 -0.4389     0.1840     -2.385     0.0171     0.6447 [0.450, 0.925]
+[2026-08-14 01:36:23] [05_rq3] age                       -0.0736     0.1879     -0.392     0.6950     0.9290 [0.643, 1.343]
+[2026-08-14 01:36:23] [05_rq3] vas_pre                    0.1784     0.2055      0.868     0.3853     1.1953 [0.799, 1.788]
+[2026-08-14 01:36:23] [05_rq3] maxlimit_num              -0.3745     0.2106     -1.778     0.0754     0.6876 [0.455, 1.039]
+[2026-08-14 01:36:23] [05_rq3] neuro_def_pre             -0.2201     0.2056     -1.070     0.2844     0.8024 [0.536, 1.201]
+[2026-08-14 01:36:23] [05_rq3] 
+[2026-08-14 01:36:23] [05_rq3] Significance at α = .05:
+[2026-08-14 01:36:23] [05_rq3]   age: not significant (p = 0.6950)
+[2026-08-14 01:36:23] [05_rq3]   vas_pre: not significant (p = 0.3853)
+[2026-08-14 01:36:23] [05_rq3]   maxlimit_num: not significant (p = 0.0754)
+[2026-08-14 01:36:23] [05_rq3]   neuro_def_pre: not significant (p = 0.2844)
+[2026-08-14 01:36:23] [05_rq3] 
+[2026-08-14 01:36:23] [05_rq3] Note: Coefficients are on the standardized scale for continuous variables.
+[2026-08-14 01:36:23] [05_rq3] Odds ratios represent the change in odds per 1 SD increase for standardized variables.
+[2026-08-14 01:36:23] [05_rq3] The condition variable was excluded due to insufficient variability
+[2026-08-14 01:36:23] [05_rq3] (96.7% of patients presented with disc herniation-related complaints).
+[2026-08-14 01:36:23] [06_rq4] 
+==================================================
+[2026-08-14 01:36:23] [06_rq4] LogisticRegression | Threshold=0.50 | AUC=0.645 | F2=0.595
+[2026-08-14 01:36:23] [06_rq4]               precision    recall  f1-score   support
+
+        Fail       0.70      0.58      0.64        24
+     Success       0.50      0.62      0.56        16
+
+    accuracy                           0.60        40
+   macro avg       0.60      0.60      0.60        40
+weighted avg       0.62      0.60      0.60        40
+
+[2026-08-14 01:36:24] [06_rq4] 
+==================================================
+[2026-08-14 01:36:24] [06_rq4] RandomForest | Threshold=0.50 | AUC=0.573 | F2=0.338
+[2026-08-14 01:36:24] [06_rq4]               precision    recall  f1-score   support
+
+        Fail       0.63      0.79      0.70        24
+     Success       0.50      0.31      0.38        16
+
+    accuracy                           0.60        40
+   macro avg       0.57      0.55      0.54        40
+weighted avg       0.58      0.60      0.58        40
+
+[2026-08-14 01:36:24] [06_rq4] 
+==================================================
+[2026-08-14 01:36:24] [06_rq4] SVM | Threshold=0.50 | AUC=0.293 | F2=0.139
+[2026-08-14 01:36:24] [06_rq4]               precision    recall  f1-score   support
+
+        Fail       0.56      0.75      0.64        24
+     Success       0.25      0.12      0.17        16
+
+    accuracy                           0.50        40
+   macro avg       0.41      0.44      0.40        40
+weighted avg       0.44      0.50      0.45        40
+
+[2026-08-14 01:36:24] [06_rq4] 
+Condition variable excluded due to insufficient variability
+[2026-08-14 01:36:24] [06_rq4] (96.7% disc herniation-related complaints).
+[2026-08-14 01:36:24] [06_rq4] Features used: ['age', 'vas_pre', 'maxlimit_num', 'neuro_def_pre']
+[2026-08-14 01:36:25] [08_advanced] === ADVANCED RQ4: EXPANDED FEATURES + PCA ===
+[2026-08-14 01:36:25] [08_advanced] Total patients: 160
+[2026-08-14 01:36:25] [08_advanced] SLR features added: mean, min, asymmetry
+[2026-08-14 01:36:25] [08_advanced] Special tests feature added from 6 columns
+[2026-08-14 01:36:25] [08_advanced] Total features before PCA: 10
+[2026-08-14 01:36:25] [08_advanced] Feature names: ['age', 'vas_pre', 'maxlimit_num', 'neuro_def_pre', 'maxpain_num', 'neuro_abnormal_count', 'slr_mean', 'slr_min', 'slr_asymmetry', 'positive_tests_count']
+[2026-08-14 01:36:25] [08_advanced] Train: 128 patients (51 successes) | Test: 32 (13 successes)
+[2026-08-14 01:36:25] [08_advanced] 
+[2026-08-14 01:36:25] [08_advanced] --- PCA Analysis (fitted on training data only) ---
+[2026-08-14 01:36:25] [08_advanced] Components needed for 95% variance: 8
+[2026-08-14 01:36:25] [08_advanced]   PC1: 0.296 (cumulative: 0.296)
+[2026-08-14 01:36:25] [08_advanced]   PC2: 0.186 (cumulative: 0.483)
+[2026-08-14 01:36:25] [08_advanced]   PC3: 0.115 (cumulative: 0.598)
+[2026-08-14 01:36:25] [08_advanced]   PC4: 0.098 (cumulative: 0.696)
+[2026-08-14 01:36:25] [08_advanced]   PC5: 0.084 (cumulative: 0.781)
+[2026-08-14 01:36:25] [08_advanced]   PC6: 0.070 (cumulative: 0.851)
+[2026-08-14 01:36:25] [08_advanced]   PC7: 0.061 (cumulative: 0.911)
+[2026-08-14 01:36:25] [08_advanced]   PC8: 0.057 (cumulative: 0.968)
+[2026-08-14 01:36:25] [08_advanced]   PC9: 0.030 (cumulative: 0.998)
+[2026-08-14 01:36:25] [08_advanced]   PC10: 0.002 (cumulative: 1.000)
+[2026-08-14 01:36:25] [08_advanced] Features after PCA: 8
+[2026-08-14 01:36:25] [08_advanced] 
+[2026-08-14 01:36:25] [08_advanced] PCA Loadings (feature contributions to each component):
+[2026-08-14 01:36:25] [08_advanced]                            PC1       PC2       PC3       PC4       PC5       PC6       PC7       PC8
+age                   0.062536  0.326631  0.499903  0.019003  0.683023  0.239364 -0.295469  0.135484
+vas_pre               0.311457  0.206156  0.066007  0.499511  0.228090 -0.257704  0.655876 -0.238839
+maxlimit_num          0.389630  0.058409 -0.105170  0.287455 -0.123851 -0.372774 -0.251392  0.729029
+neuro_def_pre         0.339212  0.374072 -0.050620 -0.455959 -0.180038 -0.128699 -0.009483 -0.179150
+maxpain_num           0.342878  0.026273 -0.221682  0.482669 -0.132142  0.284264 -0.530086 -0.467401
+neuro_abnormal_count  0.323339  0.425531  0.208301 -0.306906 -0.237397 -0.094779 -0.039900 -0.115996
+slr_mean             -0.321008  0.448459 -0.479627  0.053481  0.173459 -0.112274 -0.077692 -0.016453
+slr_min              -0.364203  0.513974 -0.251329  0.126355 -0.059883  0.073118  0.020095  0.114312
+slr_asymmetry         0.235214 -0.244750 -0.479627 -0.312371  0.568835 -0.302732 -0.110923 -0.133083
+positive_tests_count  0.345076  0.022710 -0.341078 -0.126638  0.051339  0.722068  0.343381  0.313135
+[2026-08-14 01:36:25] [08_advanced] 
+[2026-08-14 01:36:25] [08_advanced] --- LogisticRegression ---
+[2026-08-14 01:36:25] [08_advanced] Tuning hyperparameters...
+[2026-08-14 01:36:27] [08_advanced] Best params: {'C': 0.1, 'penalty': 'l2', 'solver': 'saga'}
+[2026-08-14 01:36:27] [08_advanced] Best CV F1-score: 0.5878
+[2026-08-14 01:36:27] [08_advanced] Best F1 threshold: 0.48
+[2026-08-14 01:36:27] [08_advanced] At best F1 → AUC: 0.7206 | Sens: 0.7692 | PPV: 0.5882 | F1: 0.6667
+[2026-08-14 01:36:27] [08_advanced] At thresh=0.50 → Sens: 0.6154 | PPV: 0.6154 | F1: 0.6154
+[2026-08-14 01:36:27] [08_advanced] No threshold met both sensitivity ≥ 0.85 and PPV ≥ 0.70
+[2026-08-14 01:36:27] [08_advanced] 
+[2026-08-14 01:36:27] [08_advanced] --- RandomForest ---
+[2026-08-14 01:36:27] [08_advanced] Tuning hyperparameters...
+[2026-08-14 01:36:32] [08_advanced] Best params: {'max_depth': 3, 'min_samples_leaf': 10, 'min_samples_split': 5, 'n_estimators': 300}
+[2026-08-14 01:36:32] [08_advanced] Best CV F1-score: 0.5986
+[2026-08-14 01:36:32] [08_advanced] Best F1 threshold: 0.56
+[2026-08-14 01:36:32] [08_advanced] At best F1 → AUC: 0.7287 | Sens: 0.6154 | PPV: 0.7273 | F1: 0.6667
+[2026-08-14 01:36:32] [08_advanced] At thresh=0.50 → Sens: 0.6154 | PPV: 0.5714 | F1: 0.5926
+[2026-08-14 01:36:32] [08_advanced] No threshold met both sensitivity ≥ 0.85 and PPV ≥ 0.70
+[2026-08-14 01:36:32] [08_advanced] 
+[2026-08-14 01:36:32] [08_advanced] --- LightGBM ---
+[2026-08-14 01:36:32] [08_advanced] Tuning hyperparameters...
+[2026-08-14 01:37:22] [08_advanced] Best params: {'learning_rate': 0.1, 'max_depth': 4, 'min_child_samples': 10, 'n_estimators': 50, 'num_leaves': 7, 'reg_alpha': 0.1, 'reg_lambda': 0.1}
+[2026-08-14 01:37:22] [08_advanced] Best CV F1-score: 0.5709
+[2026-08-14 01:37:23] [08_advanced] Best F1 threshold: 0.40
+[2026-08-14 01:37:23] [08_advanced] At best F1 → AUC: 0.7287 | Sens: 0.7692 | PPV: 0.6250 | F1: 0.6897
+[2026-08-14 01:37:23] [08_advanced] At thresh=0.50 → Sens: 0.6923 | PPV: 0.6000 | F1: 0.6429
+[2026-08-14 01:37:23] [08_advanced] No threshold met both sensitivity ≥ 0.85 and PPV ≥ 0.70
+[2026-08-14 01:37:23] [08_advanced] 
+[2026-08-14 01:37:23] [08_advanced] --- SVM ---
+[2026-08-14 01:37:23] [08_advanced] Tuning hyperparameters...
+[2026-08-14 01:37:23] [08_advanced] Best params: {'C': 1.0, 'gamma': 0.1}
+[2026-08-14 01:37:23] [08_advanced] Best CV F1-score: 0.6083
+[2026-08-14 01:37:23] [08_advanced] Best F1 threshold: 0.42
+[2026-08-14 01:37:23] [08_advanced] At best F1 → AUC: 0.7490 | Sens: 0.6923 | PPV: 0.6923 | F1: 0.6923
+[2026-08-14 01:37:23] [08_advanced] At thresh=0.50 → Sens: 0.5385 | PPV: 0.7000 | F1: 0.6087
+[2026-08-14 01:37:23] [08_advanced] No threshold met both sensitivity ≥ 0.85 and PPV ≥ 0.70
+[2026-08-14 01:37:23] [08_advanced] 
+[2026-08-14 01:37:23] [08_advanced] === MODEL COMPARISON ===
+[2026-08-14 01:37:23] [08_advanced] 
+[2026-08-14 01:37:23] [08_advanced] Model                          AUC     Sens      PPV       F2       F1      MCC
+[2026-08-14 01:37:23] [08_advanced] ----------------------------------------------------------------------
+[2026-08-14 01:37:23] [08_advanced] LogisticRegression          0.7206   0.7692   0.5882   0.7246   0.6667   0.3945
+[2026-08-14 01:37:23] [08_advanced] RandomForest                0.7287   0.6154   0.7273   0.6349   0.6667   0.4731
+[2026-08-14 01:37:23] [08_advanced] LightGBM                    0.7287   0.7692   0.6250   0.7353   0.6897   0.4454
+[2026-08-14 01:37:23] [08_advanced] SVM                         0.7490   0.6923   0.6923   0.6923   0.6923   0.4818
+[2026-08-14 01:37:23] [08_advanced] 
+[2026-08-14 01:37:23] [08_advanced] Best model (by clinical balance): LightGBM
+[2026-08-14 01:37:23] [08_advanced] === ROC CURVES ===
+[2026-08-14 01:37:23] [08_advanced] ROC curve saved: output/figures/roc_curves_advanced.png
+[2026-08-14 01:37:23] [08_advanced] 
+[2026-08-14 01:37:23] [08_advanced] AUC values (test set, 80/20 split):
+[2026-08-14 01:37:23] [08_advanced]   LogisticRegression        AUC = 0.7206
+[2026-08-14 01:37:23] [08_advanced]   RandomForest              AUC = 0.7287
+[2026-08-14 01:37:23] [08_advanced]   LightGBM                  AUC = 0.7287
+[2026-08-14 01:37:23] [08_advanced]   SVM                       AUC = 0.7490
+[2026-08-14 01:37:23] [08_advanced] 
+[2026-08-14 01:37:23] [08_advanced] Confusion matrix saved: output/figures/best_model_confusion_matrix.png
+[2026-08-14 01:37:23] [08_advanced] 
+[2026-08-14 01:37:23] [08_advanced] Best Model Confusion Matrix at optimal threshold (0.40):
+[2026-08-14 01:37:23] [08_advanced]   TP= 10  FP=  6
+[2026-08-14 01:37:23] [08_advanced]   FN=  3  TN= 13
+[2026-08-14 01:37:23] [08_advanced] 
+[2026-08-14 01:37:23] [08_advanced]   AUC=0.7287, F1=0.6897, Sens=0.7692
+[2026-08-14 01:37:23] [08_advanced] ❌ Neither target met. Best F2: 0.7353
+[2026-08-14 01:37:23] [08_advanced] 
+[2026-08-14 01:37:23] [08_advanced] === FEATURE IMPORTANCE (PCA Components) ===
+[2026-08-14 01:37:23] [08_advanced] Feature importances:
+[2026-08-14 01:37:23] [08_advanced]   PC1: 24.0000
+[2026-08-14 01:37:23] [08_advanced]   PC2: 30.0000
+[2026-08-14 01:37:23] [08_advanced]   PC3: 25.0000
+[2026-08-14 01:37:23] [08_advanced]   PC4: 41.0000
+[2026-08-14 01:37:23] [08_advanced]   PC5: 42.0000
+[2026-08-14 01:37:23] [08_advanced]   PC6: 31.0000
+[2026-08-14 01:37:23] [08_advanced]   PC7: 29.0000
+[2026-08-14 01:37:23] [08_advanced]   PC8: 47.0000
+[2026-08-14 01:37:23] [08_advanced] 
+[2026-08-14 01:37:23] [08_advanced] Top contributing original features to PC1:
+[2026-08-14 01:37:23] [08_advanced]   maxlimit_num: 0.3896
+[2026-08-14 01:37:23] [08_advanced]   slr_min: 0.3642
+[2026-08-14 01:37:23] [08_advanced]   positive_tests_count: 0.3451
+[2026-08-14 01:37:23] [08_advanced]   maxpain_num: 0.3429
+[2026-08-14 01:37:23] [08_advanced]   neuro_def_pre: 0.3392
+[2026-08-14 01:37:23] [08_advanced] 
+[2026-08-14 01:37:23] [08_advanced] Figure saved: output/figures/advanced_rq4_results.png
+[2026-08-14 01:37:23] [08_advanced] Summary saved: output/tables/advanced_rq4_summary.csv
+[2026-08-14 01:37:23] [08_advanced] 
+[2026-08-14 01:37:23] [08_advanced] === ADVANCED RQ4 ANALYSIS COMPLETE ===
+[2026-08-14 01:37:23] [08_advanced] Best model saved: output/models/lightgbm_best.pkl
+[2026-08-14 01:37:23] [08_advanced] Scaler and PCA saved: output/models/
+[2026-08-14 01:37:23] [08_advanced] 
+[2026-08-14 01:37:29] [10_shap] === SHAP ANALYSIS ===
+[2026-08-14 01:37:29] [10_shap] SHAP summary plot saved to output/figures/shap_summary.png
